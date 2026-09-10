@@ -30,6 +30,16 @@ $portfolio = new WP_Query([
 ]);
 ?>
 <div class="results-summary"><strong><?php echo esc_html((string) $portfolio->found_posts); ?></strong> technologies found</div>
+<?php if ($search || $sector || $stage) :
+    $active_sector = $sector ? get_term_by('slug', $sector, 'technology_sector') : null;
+    $active_stage = $stage ? get_term_by('slug', $stage, 'readiness_stage') : null;
+    ?>
+    <div class="active-filters" aria-label="Active technology filters">
+        <?php if ($search) : ?><span>Search: <?php echo esc_html($search); ?></span><?php endif; ?>
+        <?php if ($active_sector && !is_wp_error($active_sector)) : ?><span>Sector: <?php echo esc_html($active_sector->name); ?></span><?php endif; ?>
+        <?php if ($active_stage && !is_wp_error($active_stage)) : ?><span>Stage: <?php echo esc_html($active_stage->name); ?></span><?php endif; ?>
+    </div>
+<?php endif; ?>
 <?php if ($portfolio->have_posts()) : ?><div class="grid portfolio-grid"><?php while ($portfolio->have_posts()) : $portfolio->the_post(); arbok_technology_card(); endwhile; wp_reset_postdata(); ?></div>
 <?php
 $pagination = paginate_links([

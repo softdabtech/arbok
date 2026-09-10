@@ -402,24 +402,44 @@ function arbok_technology_image_url(string $slug): string {
     return arbok_media_url('Technologies', arbok_media_url('Technology Blue', ''));
 }
 
+function arbok_technology_visual_fallback(int $post_id = 0, string $context = 'card'): void {
+    $post_id = $post_id ?: get_the_ID();
+    $terms = get_the_terms($post_id, 'technology_sector');
+    $sector = $terms && !is_wp_error($terms) ? $terms[0]->name : 'ARBOK technology';
+    $sector_slug = $terms && !is_wp_error($terms) ? sanitize_html_class($terms[0]->slug) : 'multi-sector';
+    $title = get_the_title($post_id);
+    $short_title = preg_replace('/^ARBOK[\s\-:]*/i', '', $title);
+    $short_title = wp_trim_words($short_title ?: $title, $context === 'hero' ? 8 : 5, '');
+    ?>
+    <div class="technology-visual-fallback technology-visual-fallback--<?php echo esc_attr($sector_slug); ?> technology-visual-fallback--<?php echo esc_attr($context); ?>" role="img" aria-label="<?php echo esc_attr($title); ?>">
+        <span class="tech-visual-orbit" aria-hidden="true"></span>
+        <span class="tech-visual-grid" aria-hidden="true"></span>
+        <span class="tech-visual-badge"><?php echo esc_html($sector); ?></span>
+        <strong><?php echo esc_html($short_title); ?></strong>
+        <small>Strategic Research Institute ARBOK</small>
+    </div>
+    <?php
+}
+
 function arbok_technology_card(int $post_id = 0): void {
     $post_id = $post_id ?: get_the_ID();
     $card_slug = get_post_field('post_name', $post_id);
     $terms = get_the_terms($post_id, 'technology_sector');
     $sector = $terms && !is_wp_error($terms) ? $terms[0]->name : 'Multi-sector platform';
+    $sector_slug = $terms && !is_wp_error($terms) ? sanitize_html_class($terms[0]->slug) : 'multi-sector';
     $stage_terms = get_the_terms($post_id, 'readiness_stage');
     $stage_meta = (string) arbok_field('technology_readiness_level', $post_id, '');
     $stage = $stage_terms && !is_wp_error($stage_terms) ? $stage_terms[0]->name : ($stage_meta ?: 'Stage on request');
     $summary_source = (string) arbok_field('short_description', $post_id, get_post_field('post_excerpt', $post_id) ?: get_post_field('post_content', $post_id));
     ?>
-    <article class="technology-card technology-card--<?php echo esc_attr($card_slug); ?>">
+    <article class="technology-card technology-card--<?php echo esc_attr($card_slug); ?> technology-card--sector-<?php echo esc_attr($sector_slug); ?>">
         <a class="technology-card__visual" href="<?php echo esc_url(get_permalink($post_id)); ?>">
             <?php if (has_post_thumbnail($post_id)) : echo get_the_post_thumbnail($post_id, 'large'); else : $fallback_image = arbok_technology_image_url($card_slug); ?>
-                <?php if ($fallback_image) : ?><img src="<?php echo esc_url($fallback_image); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" loading="lazy"><?php else : ?><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="" loading="lazy"><?php endif; ?>
+                <?php if ($fallback_image) : ?><img src="<?php echo esc_url($fallback_image); ?>" alt="<?php echo esc_attr(get_the_title($post_id)); ?>" loading="lazy"><?php else : arbok_technology_visual_fallback($post_id, 'card'); endif; ?>
             <?php endif; ?>
         </a>
         <div class="technology-card__body">
-            <div class="card-kicker"><span><?php echo esc_html($sector); ?></span><span><?php echo esc_html($stage); ?></span></div>
+            <div class="card-kicker"><span><?php echo esc_html($sector); ?></span><i aria-hidden="true">•</i><span><?php echo esc_html($stage); ?></span></div>
             <h3><a href="<?php echo esc_url(get_permalink($post_id)); ?>"><?php echo esc_html(get_the_title($post_id)); ?></a></h3>
             <p><?php echo esc_html(arbok_clean_summary($summary_source, get_the_title($post_id), 25)); ?></p>
             <div class="card-actions"><a class="text-link" href="<?php echo esc_url(get_permalink($post_id)); ?>">Explore technology <span>↗</span></a><a class="mini-cta" href="<?php echo esc_url(home_url('/contact/?subject=technology&technology=' . rawurlencode(get_the_title($post_id)))); ?>">Discuss</a></div>
