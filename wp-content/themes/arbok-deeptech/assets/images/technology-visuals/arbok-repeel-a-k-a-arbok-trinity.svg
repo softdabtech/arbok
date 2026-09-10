@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Arbok-Repeel (a.k.a. Arbok-TRINITY) — Fertilizers</title>
+  <desc id="desc">Neutral ARBOK technology visual for Arbok-Repeel (a.k.a. Arbok-TRINITY) in the Fertilizers sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(169)">
+      <stop offset="0%" stop-color="#10291d"/>
+      <stop offset="56%" stop-color="#2f7555"/>
+      <stop offset="100%" stop-color="#9ccf74"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 169 C 160 89, 320 249, 560 169 S 940 99, 1280 179" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 245 C 160 165, 320 325, 560 245 S 940 175, 1280 255" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 321 C 160 241, 320 401, 560 321 S 940 251, 1280 331" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 397 C 160 317, 320 477, 560 397 S 940 327, 1280 407" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="857" cy="288" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="857" cy="288" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="343" cy="527" r="3" fill="#ffffff" opacity="0.10"/><circle cx="512" cy="216" r="6" fill="#ffffff" opacity="0.14"/><circle cx="681" cy="465" r="9" fill="#ffffff" opacity="0.17"/><circle cx="850" cy="154" r="4" fill="#ffffff" opacity="0.21"/><circle cx="1019" cy="403" r="7" fill="#ffffff" opacity="0.24"/><circle cx="228" cy="92" r="2" fill="#ffffff" opacity="0.10"/><circle cx="397" cy="341" r="5" fill="#ffffff" opacity="0.14"/><circle cx="566" cy="590" r="8" fill="#ffffff" opacity="0.17"/><circle cx="735" cy="279" r="3" fill="#ffffff" opacity="0.21"/><circle cx="904" cy="528" r="6" fill="#ffffff" opacity="0.24"/><circle cx="1073" cy="217" r="9" fill="#ffffff" opacity="0.10"/><circle cx="282" cy="466" r="4" fill="#ffffff" opacity="0.14"/><circle cx="451" cy="155" r="7" fill="#ffffff" opacity="0.17"/><circle cx="620" cy="404" r="2" fill="#ffffff" opacity="0.21"/><circle cx="789" cy="93" r="5" fill="#ffffff" opacity="0.24"/><circle cx="958" cy="342" r="8" fill="#ffffff" opacity="0.10"/><circle cx="167" cy="591" r="3" fill="#ffffff" opacity="0.14"/><circle cx="336" cy="280" r="6" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M52 100V55M52 55c-3-21-18-34-39-37 3 23 17 36 39 37zM52 65c6-24 24-38 51-42-3 27-21 42-51 42z"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">FERTILIZERS</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">Arbok-Repeel (a.k.a.</text>
+<text x="84" y="490" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">Arbok-TRINITY)</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>

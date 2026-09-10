@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">ARBOK-Rhodium (metal case) — Crystallization</title>
+  <desc id="desc">Neutral ARBOK technology visual for ARBOK-Rhodium (metal case) in the Crystallization sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(205)">
+      <stop offset="0%" stop-color="#0d2440"/>
+      <stop offset="56%" stop-color="#5a6ea7"/>
+      <stop offset="100%" stop-color="#c4e6ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 181 C 160 101, 320 261, 560 181 S 940 111, 1280 191" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 257 C 160 177, 320 337, 560 257 S 940 187, 1280 267" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 333 C 160 253, 320 413, 560 333 S 940 263, 1280 343" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 409 C 160 329, 320 489, 560 409 S 940 339, 1280 419" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="869" cy="276" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="869" cy="276" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="355" cy="595" r="7" fill="#ffffff" opacity="0.10"/><circle cx="800" cy="160" r="2" fill="#ffffff" opacity="0.14"/><circle cx="285" cy="285" r="5" fill="#ffffff" opacity="0.17"/><circle cx="730" cy="410" r="8" fill="#ffffff" opacity="0.21"/><circle cx="215" cy="535" r="3" fill="#ffffff" opacity="0.24"/><circle cx="660" cy="100" r="6" fill="#ffffff" opacity="0.10"/><circle cx="145" cy="225" r="9" fill="#ffffff" opacity="0.14"/><circle cx="590" cy="350" r="4" fill="#ffffff" opacity="0.17"/><circle cx="1035" cy="475" r="7" fill="#ffffff" opacity="0.21"/><circle cx="520" cy="600" r="2" fill="#ffffff" opacity="0.24"/><circle cx="965" cy="165" r="5" fill="#ffffff" opacity="0.10"/><circle cx="450" cy="290" r="8" fill="#ffffff" opacity="0.14"/><circle cx="895" cy="415" r="3" fill="#ffffff" opacity="0.17"/><circle cx="380" cy="540" r="6" fill="#ffffff" opacity="0.21"/><circle cx="825" cy="105" r="9" fill="#ffffff" opacity="0.24"/><circle cx="310" cy="230" r="4" fill="#ffffff" opacity="0.10"/><circle cx="755" cy="355" r="7" fill="#ffffff" opacity="0.14"/><circle cx="240" cy="480" r="2" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M52 10 88 31v42L52 94 16 73V31zM52 10v84M16 31l72 42M88 31 16 73"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">CRYSTALLIZATION</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">ARBOK-Rhodium (metal</text>
+<text x="84" y="490" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">case)</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>

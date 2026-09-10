@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">AEROBATT (BINARY BATTERY for Heavy Machinery) — Energy Production</title>
+  <desc id="desc">Neutral ARBOK technology visual for AEROBATT (BINARY BATTERY for Heavy Machinery) in the Energy Production sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(351)">
+      <stop offset="0%" stop-color="#182642"/>
+      <stop offset="56%" stop-color="#014387"/>
+      <stop offset="100%" stop-color="#6fb7ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 183 C 160 103, 320 263, 560 183 S 940 113, 1280 193" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 259 C 160 179, 320 339, 560 259 S 940 189, 1280 269" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 335 C 160 255, 320 415, 560 335 S 940 265, 1280 345" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 411 C 160 331, 320 491, 560 411 S 940 341, 1280 421" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="855" cy="290" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="855" cy="290" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="537" cy="133" r="9" fill="#ffffff" opacity="0.10"/><circle cx="1008" cy="524" r="4" fill="#ffffff" opacity="0.14"/><circle cx="519" cy="355" r="7" fill="#ffffff" opacity="0.17"/><circle cx="990" cy="186" r="2" fill="#ffffff" opacity="0.21"/><circle cx="501" cy="577" r="5" fill="#ffffff" opacity="0.24"/><circle cx="972" cy="408" r="8" fill="#ffffff" opacity="0.10"/><circle cx="483" cy="239" r="3" fill="#ffffff" opacity="0.14"/><circle cx="954" cy="630" r="6" fill="#ffffff" opacity="0.17"/><circle cx="465" cy="461" r="9" fill="#ffffff" opacity="0.21"/><circle cx="936" cy="292" r="4" fill="#ffffff" opacity="0.24"/><circle cx="447" cy="123" r="7" fill="#ffffff" opacity="0.10"/><circle cx="918" cy="514" r="2" fill="#ffffff" opacity="0.14"/><circle cx="429" cy="345" r="5" fill="#ffffff" opacity="0.17"/><circle cx="900" cy="176" r="8" fill="#ffffff" opacity="0.21"/><circle cx="411" cy="567" r="3" fill="#ffffff" opacity="0.24"/><circle cx="882" cy="398" r="6" fill="#ffffff" opacity="0.10"/><circle cx="393" cy="229" r="9" fill="#ffffff" opacity="0.14"/><circle cx="864" cy="620" r="4" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M55 6 24 58h25l-7 50 38-61H56z"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">ENERGY PRODUCTION</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">AEROBATT (BINARY BATTERY</text>
+<text x="84" y="490" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">for Heavy Machinery)</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>

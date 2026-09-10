@@ -381,6 +381,12 @@ function arbok_breadcrumbs(): void {
 
 
 function arbok_technology_image_url(string $slug): string {
+    $slug = sanitize_title($slug);
+    $generated_path = get_template_directory() . '/assets/images/technology-visuals/' . $slug . '.svg';
+    if ($slug && file_exists($generated_path)) {
+        return get_template_directory_uri() . '/assets/images/technology-visuals/' . $slug . '.svg';
+    }
+
     $map = [
         'arbok-desalination' => ['ARBOK Desalination System', 'ARBOK-Desalination-System', 'WaterOutput'],
         'arbok-brine' => ['ARBOK Brine', 'Salt Production', 'Crystallization'],

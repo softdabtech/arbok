@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">AZOW-S — Water Desalination &amp; Treatment</title>
+  <desc id="desc">Neutral ARBOK technology visual for AZOW-S in the Water Desalination &amp; Treatment sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(249)">
+      <stop offset="0%" stop-color="#042a4d"/>
+      <stop offset="56%" stop-color="#026d9a"/>
+      <stop offset="100%" stop-color="#49bfda"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 177 C 160 97, 320 257, 560 177 S 940 107, 1280 187" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 253 C 160 173, 320 333, 560 253 S 940 183, 1280 263" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 329 C 160 249, 320 409, 560 329 S 940 259, 1280 339" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 405 C 160 325, 320 485, 560 405 S 940 335, 1280 415" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="861" cy="284" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="861" cy="284" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="543" cy="167" r="3" fill="#ffffff" opacity="0.10"/><circle cx="192" cy="216" r="6" fill="#ffffff" opacity="0.14"/><circle cx="801" cy="265" r="9" fill="#ffffff" opacity="0.17"/><circle cx="450" cy="314" r="4" fill="#ffffff" opacity="0.21"/><circle cx="1059" cy="363" r="7" fill="#ffffff" opacity="0.24"/><circle cx="708" cy="412" r="2" fill="#ffffff" opacity="0.10"/><circle cx="357" cy="461" r="5" fill="#ffffff" opacity="0.14"/><circle cx="966" cy="510" r="8" fill="#ffffff" opacity="0.17"/><circle cx="615" cy="559" r="3" fill="#ffffff" opacity="0.21"/><circle cx="264" cy="608" r="6" fill="#ffffff" opacity="0.24"/><circle cx="873" cy="97" r="9" fill="#ffffff" opacity="0.10"/><circle cx="522" cy="146" r="4" fill="#ffffff" opacity="0.14"/><circle cx="171" cy="195" r="7" fill="#ffffff" opacity="0.17"/><circle cx="780" cy="244" r="2" fill="#ffffff" opacity="0.21"/><circle cx="429" cy="293" r="5" fill="#ffffff" opacity="0.24"/><circle cx="1038" cy="342" r="8" fill="#ffffff" opacity="0.10"/><circle cx="687" cy="391" r="3" fill="#ffffff" opacity="0.14"/><circle cx="336" cy="440" r="6" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M42 8 C25 33 14 49 14 65 c0 22 17 39 38 39s38-17 38-39C90 49 75 32 42 8Z M31 70c8 10 25 11 36 0"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">WATER DESALINATION &amp; TREATMENT</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">AZOW-S</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>

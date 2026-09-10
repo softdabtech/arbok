@@ -1,0 +1,1852 @@
+[
+  {
+    "slug": "ewatt",
+    "title": "eWATT",
+    "file": "assets/images/technology-visuals/ewatt.svg"
+  },
+  {
+    "slug": "zigballs",
+    "title": "ZIGBALLS",
+    "file": "assets/images/technology-visuals/zigballs.svg"
+  },
+  {
+    "slug": "zerrofat-food-degreaser",
+    "title": "ZERROFAT (Food Degreaser)",
+    "file": "assets/images/technology-visuals/zerrofat-food-degreaser.svg"
+  },
+  {
+    "slug": "wera-wide-ranging-electro-optical-responsive-architecture",
+    "title": "WERA (Wide-Ranging Electro-optical Responsive Architecture)",
+    "file": "assets/images/technology-visuals/wera-wide-ranging-electro-optical-responsive-architecture.svg"
+  },
+  {
+    "slug": "vacuum-osmosis-vo-ultra-low-energy-desalination-and-water-treatment-architecture",
+    "title": "Vacuum Osmosis (VO) — Ultra-Low-Energy Desalination and Water Treatment Architecture",
+    "file": "assets/images/technology-visuals/vacuum-osmosis-vo-ultra-low-energy-desalination-and-water-treatment-architecture.svg"
+  },
+  {
+    "slug": "universe-generator",
+    "title": "Universe Generator",
+    "file": "assets/images/technology-visuals/universe-generator.svg"
+  },
+  {
+    "slug": "thermally-expanded-graphite-teg",
+    "title": "Thermally Expanded Graphite (TEG / ТРГ)",
+    "file": "assets/images/technology-visuals/thermally-expanded-graphite-teg.svg"
+  },
+  {
+    "slug": "thermavolt",
+    "title": "ThermaVolt",
+    "file": "assets/images/technology-visuals/thermavolt.svg"
+  },
+  {
+    "slug": "the-exhaustive-viewer",
+    "title": "The Exhaustive Viewer",
+    "file": "assets/images/technology-visuals/the-exhaustive-viewer.svg"
+  },
+  {
+    "slug": "tsm-ceramic",
+    "title": "TSM Ceramic",
+    "file": "assets/images/technology-visuals/tsm-ceramic.svg"
+  },
+  {
+    "slug": "tsm-ceramic-fire",
+    "title": "TSM Ceramic (Fire)",
+    "file": "assets/images/technology-visuals/tsm-ceramic-fire.svg"
+  },
+  {
+    "slug": "tristone",
+    "title": "TRISTONE",
+    "file": "assets/images/technology-visuals/tristone.svg"
+  },
+  {
+    "slug": "arbok-trapswitch",
+    "title": "ARBOK-TrapSwitch",
+    "file": "assets/images/technology-visuals/arbok-trapswitch.svg"
+  },
+  {
+    "slug": "teru-thermal-energy-recovery-unit",
+    "title": "TERU (Thermal Energy Recovery Unit)",
+    "file": "assets/images/technology-visuals/teru-thermal-energy-recovery-unit.svg"
+  },
+  {
+    "slug": "telorise-electro-thermal-energy-conversion",
+    "title": "TELORISE (Electro-Thermal Energy Conversion)",
+    "file": "assets/images/technology-visuals/telorise-electro-thermal-energy-conversion.svg"
+  },
+  {
+    "slug": "tegfil-teg-filter",
+    "title": "TEGFIL (TEG Filter)",
+    "file": "assets/images/technology-visuals/tegfil-teg-filter.svg"
+  },
+  {
+    "slug": "teg-blanket",
+    "title": "TEG-Blanket",
+    "file": "assets/images/technology-visuals/teg-blanket.svg"
+  },
+  {
+    "slug": "teg-beton",
+    "title": "TEG-BETON",
+    "file": "assets/images/technology-visuals/teg-beton.svg"
+  },
+  {
+    "slug": "teg-panels-thermally-expanded-graphite-panels",
+    "title": "TEG Panels (Thermally Expanded Graphite Panels)",
+    "file": "assets/images/technology-visuals/teg-panels-thermally-expanded-graphite-panels.svg"
+  },
+  {
+    "slug": "t-y-k-e-truly-yielded-key-entropy",
+    "title": "T.Y.K.E. (Truly Yielded Key Entropy)",
+    "file": "assets/images/technology-visuals/t-y-k-e-truly-yielded-key-entropy.svg"
+  },
+  {
+    "slug": "steamshot",
+    "title": "SteamShot",
+    "file": "assets/images/technology-visuals/steamshot.svg"
+  },
+  {
+    "slug": "skyway-green2-integration-of-atmospheric-energy-conversion-and-water-recovery",
+    "title": "SkyWay — Green² (Integration of Atmospheric Energy Conversion and Water Recovery)",
+    "file": "assets/images/technology-visuals/skyway-green2-integration-of-atmospheric-energy-conversion-and-water-recovery.svg"
+  },
+  {
+    "slug": "skymanager",
+    "title": "SkyManager",
+    "file": "assets/images/technology-visuals/skymanager.svg"
+  },
+  {
+    "slug": "skymanager-smog-fog-smog-remover",
+    "title": "SkyManager-SMOG (Fog & Smog Remover)",
+    "file": "assets/images/technology-visuals/skymanager-smog-fog-smog-remover.svg"
+  },
+  {
+    "slug": "skymanager-co2",
+    "title": "SkyManager-CO₂",
+    "file": "assets/images/technology-visuals/skymanager-co2.svg"
+  },
+  {
+    "slug": "scoodeca-formerly-deka-mobi-the-deka-mobi-card-was-merged-here-july-2026",
+    "title": "Scoodeca (formerly DEKA-MOBI — the DEKA-MOBI card was merged here, July 2026)",
+    "file": "assets/images/technology-visuals/scoodeca-formerly-deka-mobi-the-deka-mobi-card-was-merged-here-july-2026.svg"
+  },
+  {
+    "slug": "synergon-hybrid-air-electric-propulsion-retrofit",
+    "title": "SYNERGON (Hybrid Air-Electric Propulsion Retrofit)",
+    "file": "assets/images/technology-visuals/synergon-hybrid-air-electric-propulsion-retrofit.svg"
+  },
+  {
+    "slug": "arbok-stopfire",
+    "title": "ARBOK-STOPFIRE",
+    "file": "assets/images/technology-visuals/arbok-stopfire.svg"
+  },
+  {
+    "slug": "steam-lift",
+    "title": "STEAM-LIFT",
+    "file": "assets/images/technology-visuals/steam-lift.svg"
+  },
+  {
+    "slug": "sotarix",
+    "title": "SOTARIX",
+    "file": "assets/images/technology-visuals/sotarix.svg"
+  },
+  {
+    "slug": "snowqueen-skymanager-snowqueen-skymanager-global",
+    "title": "SNOWQUEEN (SkyManager-SnowQueen / SkyManager-GLOBAL)",
+    "file": "assets/images/technology-visuals/snowqueen-skymanager-snowqueen-skymanager-global.svg"
+  },
+  {
+    "slug": "skydome",
+    "title": "SKYDOME",
+    "file": "assets/images/technology-visuals/skydome.svg"
+  },
+  {
+    "slug": "siryx-x-drive-reactive-electric-mercury-drive",
+    "title": "SIRYX-X Drive (Reactive Electric Mercury Drive)",
+    "file": "assets/images/technology-visuals/siryx-x-drive-reactive-electric-mercury-drive.svg"
+  },
+  {
+    "slug": "seanet",
+    "title": "SEANET",
+    "file": "assets/images/technology-visuals/seanet.svg"
+  },
+  {
+    "slug": "radiovoltaic-rv-24",
+    "title": "RadioVoltaic — RV-24",
+    "file": "assets/images/technology-visuals/radiovoltaic-rv-24.svg"
+  },
+  {
+    "slug": "quantum-optical-computer",
+    "title": "Quantum-Optical Computer",
+    "file": "assets/images/technology-visuals/quantum-optical-computer.svg"
+  },
+  {
+    "slug": "qcore",
+    "title": "QCORE",
+    "file": "assets/images/technology-visuals/qcore.svg"
+  },
+  {
+    "slug": "plato-piezo-transport",
+    "title": "PLATO — Piezo Transport",
+    "file": "assets/images/technology-visuals/plato-piezo-transport.svg"
+  },
+  {
+    "slug": "plant-factory",
+    "title": "PLANT FACTORY",
+    "file": "assets/images/technology-visuals/plant-factory.svg"
+  },
+  {
+    "slug": "optical-quantum-computer-dlt-architecture",
+    "title": "Optical-Quantum Computer (DLT Architecture)",
+    "file": "assets/images/technology-visuals/optical-quantum-computer-dlt-architecture.svg"
+  },
+  {
+    "slug": "orgaphan-edible-packaging-material",
+    "title": "ORGAPHAN (Edible Packaging Material)",
+    "file": "assets/images/technology-visuals/orgaphan-edible-packaging-material.svg"
+  },
+  {
+    "slug": "oiltrap-teg-graphene-eco-sorbent-for-oil-spills",
+    "title": "OILTRAP (TEG / Graphene Eco-Sorbent for Oil Spills)",
+    "file": "assets/images/technology-visuals/oiltrap-teg-graphene-eco-sorbent-for-oil-spills.svg"
+  },
+  {
+    "slug": "notar-n-no-tail-rotor-next-generation",
+    "title": "NOTAR-N (No Tail Rotor — Next Generation)",
+    "file": "assets/images/technology-visuals/notar-n-no-tail-rotor-next-generation.svg"
+  },
+  {
+    "slug": "nitrius",
+    "title": "NITRIUS",
+    "file": "assets/images/technology-visuals/nitrius.svg"
+  },
+  {
+    "slug": "nerotronic",
+    "title": "NEROTRONIC",
+    "file": "assets/images/technology-visuals/nerotronic.svg"
+  },
+  {
+    "slug": "modified-glassy-carbon-gcm",
+    "title": "Modified Glassy Carbon (GCM)",
+    "file": "assets/images/technology-visuals/modified-glassy-carbon-gcm.svg"
+  },
+  {
+    "slug": "mw-sparker",
+    "title": "MW-SPARKER",
+    "file": "assets/images/technology-visuals/mw-sparker.svg"
+  },
+  {
+    "slug": "magna-metal-architectured-graphene-nanocomposite-architecture",
+    "title": "MAGNA (Metal-Architectured Graphene Nanocomposite Architecture)",
+    "file": "assets/images/technology-visuals/magna-metal-architectured-graphene-nanocomposite-architecture.svg"
+  },
+  {
+    "slug": "lunoglass-formerly-regoglass-cards-merged-july-2026",
+    "title": "LunoGlass (formerly RegoGlass — cards merged, July 2026)",
+    "file": "assets/images/technology-visuals/lunoglass-formerly-regoglass-cards-merged-july-2026.svg"
+  },
+  {
+    "slug": "lunaland-lunar-construction-energy-platform",
+    "title": "LunaLand (Lunar Construction & Energy Platform)",
+    "file": "assets/images/technology-visuals/lunaland-lunar-construction-energy-platform.svg"
+  },
+  {
+    "slug": "long-battery-air-alb",
+    "title": "Long Battery Air (ALB)",
+    "file": "assets/images/technology-visuals/long-battery-air-alb.svg"
+  },
+  {
+    "slug": "ligra-battery-lithium-graphene",
+    "title": "LiGra-BATTERY (Lithium-Graphene)",
+    "file": "assets/images/technology-visuals/ligra-battery-lithium-graphene.svg"
+  },
+  {
+    "slug": "long-battery",
+    "title": "LONG BATTERY",
+    "file": "assets/images/technology-visuals/long-battery.svg"
+  },
+  {
+    "slug": "lb-heat-arbok-longbattery-heat",
+    "title": "LB HEAT (ARBOK-LongBattery HEAT)",
+    "file": "assets/images/technology-visuals/lb-heat-arbok-longbattery-heat.svg"
+  },
+  {
+    "slug": "lava-dynamo-liquid-conductor-generator",
+    "title": "LAVA-Dynamo (Liquid Conductor Generator)",
+    "file": "assets/images/technology-visuals/lava-dynamo-liquid-conductor-generator.svg"
+  },
+  {
+    "slug": "lafa-low-angle-flux-activation",
+    "title": "LAFA (Low-Angle Flux Activation)",
+    "file": "assets/images/technology-visuals/lafa-low-angle-flux-activation.svg"
+  },
+  {
+    "slug": "lachaette-landfill-leachate-treatment-application-case-of-arbok-puri",
+    "title": "LACHAETTE — landfill leachate treatment (application case of ARBOK Puri)",
+    "file": "assets/images/technology-visuals/lachaette-landfill-leachate-treatment-application-case-of-arbok-puri.svg"
+  },
+  {
+    "slug": "jellyfish-shield",
+    "title": "Jellyfish Shield",
+    "file": "assets/images/technology-visuals/jellyfish-shield.svg"
+  },
+  {
+    "slug": "jambo-2-jet-desalination-unit-jumbo-200-jdu-200",
+    "title": "JAMBO-2 (Jet Desalination Unit Jumbo-200, JDU-200)",
+    "file": "assets/images/technology-visuals/jambo-2-jet-desalination-unit-jumbo-200-jdu-200.svg"
+  },
+  {
+    "slug": "iron-air-battery",
+    "title": "IRON AIR BATTERY",
+    "file": "assets/images/technology-visuals/iron-air-battery.svg"
+  },
+  {
+    "slug": "iass",
+    "title": "IASS",
+    "file": "assets/images/technology-visuals/iass.svg"
+  },
+  {
+    "slug": "hydrodrop",
+    "title": "HydroDrop",
+    "file": "assets/images/technology-visuals/hydrodrop.svg"
+  },
+  {
+    "slug": "hywatt-green-hydrogen-production-via-thermal-solar-energy",
+    "title": "HYWATT (Green Hydrogen Production via Thermal Solar Energy)",
+    "file": "assets/images/technology-visuals/hywatt-green-hydrogen-production-via-thermal-solar-energy.svg"
+  },
+  {
+    "slug": "hydron-acid-lake-neutralization-with-power-generation",
+    "title": "HYDRON (Acid Lake Neutralization with Power Generation)",
+    "file": "assets/images/technology-visuals/hydron-acid-lake-neutralization-with-power-generation.svg"
+  },
+  {
+    "slug": "hampbox",
+    "title": "HAMPBOX",
+    "file": "assets/images/technology-visuals/hampbox.svg"
+  },
+  {
+    "slug": "green-concrete-alkali-activated-aluminosilicate-binders",
+    "title": "Green Concrete (Alkali-Activated Aluminosilicate Binders)",
+    "file": "assets/images/technology-visuals/green-concrete-alkali-activated-aluminosilicate-binders.svg"
+  },
+  {
+    "slug": "graphenevoltaic-collector-formerly-graphenevoltaic-battery",
+    "title": "GrapheneVoltaic Collector (formerly “GrapheneVoltaic Battery”)",
+    "file": "assets/images/technology-visuals/graphenevoltaic-collector-formerly-graphenevoltaic-battery.svg"
+  },
+  {
+    "slug": "graphenevoltaic-battery-solar-graphene-battery",
+    "title": "GrapheneVoltaic Battery (Solar-Graphene Battery)",
+    "file": "assets/images/technology-visuals/graphenevoltaic-battery-solar-graphene-battery.svg"
+  },
+  {
+    "slug": "graphenecell-hx",
+    "title": "GrapheneCell HX",
+    "file": "assets/images/technology-visuals/graphenecell-hx.svg"
+  },
+  {
+    "slug": "gereon-binary-battery",
+    "title": "Gereon (Binary Battery)",
+    "file": "assets/images/technology-visuals/gereon-binary-battery.svg"
+  },
+  {
+    "slug": "geo-polymer-arbok",
+    "title": "Geo-Polymer Arbok",
+    "file": "assets/images/technology-visuals/geo-polymer-arbok.svg"
+  },
+  {
+    "slug": "gereon-airnet",
+    "title": "GEREON AIRNET",
+    "file": "assets/images/technology-visuals/gereon-airnet.svg"
+  },
+  {
+    "slug": "gasheater-methane-activator",
+    "title": "GASHEATER (Methane Activator)",
+    "file": "assets/images/technology-visuals/gasheater-methane-activator.svg"
+  },
+  {
+    "slug": "fo-pro-green-hydrogen",
+    "title": "Fo-Pro (Green Hydrogen)",
+    "file": "assets/images/technology-visuals/fo-pro-green-hydrogen.svg"
+  },
+  {
+    "slug": "fermofuel-hexyl-pentyl-butyl-strains",
+    "title": "FermoFuel (Hexyl-Pentyl-Butyl Strains)",
+    "file": "assets/images/technology-visuals/fermofuel-hexyl-pentyl-butyl-strains.svg"
+  },
+  {
+    "slug": "fraco",
+    "title": "FRACO",
+    "file": "assets/images/technology-visuals/fraco.svg"
+  },
+  {
+    "slug": "exaflop-arbok-lampcore",
+    "title": "ExaFLOP (ARBOK-LAMPCORE)",
+    "file": "assets/images/technology-visuals/exaflop-arbok-lampcore.svg"
+  },
+  {
+    "slug": "arbok-elixir-a-arbok-preserving-water",
+    "title": "ARBOK Elixir-A (ARBOK preserving water)",
+    "file": "assets/images/technology-visuals/arbok-elixir-a-arbok-preserving-water.svg"
+  },
+  {
+    "slug": "electroconcrete",
+    "title": "ELECTROCONCRETE",
+    "file": "assets/images/technology-visuals/electroconcrete.svg"
+  },
+  {
+    "slug": "extracapacitor-extracap",
+    "title": "EXTRACAPACITOR (EXTRACAP)",
+    "file": "assets/images/technology-visuals/extracapacitor-extracap.svg"
+  },
+  {
+    "slug": "exo2",
+    "title": "EXO2",
+    "file": "assets/images/technology-visuals/exo2.svg"
+  },
+  {
+    "slug": "dirtygold-radiological-gold-screening",
+    "title": "DirtyGold (Radiological Gold Screening)",
+    "file": "assets/images/technology-visuals/dirtygold-radiological-gold-screening.svg"
+  },
+  {
+    "slug": "dry-cloud-adiabatic-evaporative-air-cooling",
+    "title": "DRY CLOUD (Adiabatic Evaporative Air Cooling)",
+    "file": "assets/images/technology-visuals/dry-cloud-adiabatic-evaporative-air-cooling.svg"
+  },
+  {
+    "slug": "disarmco-dragon-s-spear-dragontm-mk8",
+    "title": "DISARMCO — Dragon’s Spear (Dragon™ MK8)",
+    "file": "assets/images/technology-visuals/disarmco-dragon-s-spear-dragontm-mk8.svg"
+  },
+  {
+    "slug": "arbok-deka",
+    "title": "ARBOK-DEKA",
+    "file": "assets/images/technology-visuals/arbok-deka.svg"
+  },
+  {
+    "slug": "cyprasein",
+    "title": "Cyprasein",
+    "file": "assets/images/technology-visuals/cyprasein.svg"
+  },
+  {
+    "slug": "project-cyclonet",
+    "title": "Project CycloNet",
+    "file": "assets/images/technology-visuals/project-cyclonet.svg"
+  },
+  {
+    "slug": "climbair-thermal-draft-energy-system",
+    "title": "ClimbAir (Thermal Draft Energy System)",
+    "file": "assets/images/technology-visuals/climbair-thermal-draft-energy-system.svg"
+  },
+  {
+    "slug": "carbon-farming",
+    "title": "Carbon Farming",
+    "file": "assets/images/technology-visuals/carbon-farming.svg"
+  },
+  {
+    "slug": "cyclop-cyclorotor-vtol-platform",
+    "title": "CYCLOP (Cyclorotor VTOL Platform)",
+    "file": "assets/images/technology-visuals/cyclop-cyclorotor-vtol-platform.svg"
+  },
+  {
+    "slug": "crona",
+    "title": "CRONA",
+    "file": "assets/images/technology-visuals/crona.svg"
+  },
+  {
+    "slug": "cocon-new-type-of-heat-pump",
+    "title": "COCON (new type of heat pump)",
+    "file": "assets/images/technology-visuals/cocon-new-type-of-heat-pump.svg"
+  },
+  {
+    "slug": "ceyron",
+    "title": "CEYRON",
+    "file": "assets/images/technology-visuals/ceyron.svg"
+  },
+  {
+    "slug": "carbofluid-polymer-waste-to-carbon-black-conversion",
+    "title": "CARBOFLUID (Polymer Waste-to-Carbon-Black Conversion)",
+    "file": "assets/images/technology-visuals/carbofluid-polymer-waste-to-carbon-black-conversion.svg"
+  },
+  {
+    "slug": "chg-carbo-hydrogen-generation",
+    "title": "CHG (Carbo-Hydrogen Generation)",
+    "file": "assets/images/technology-visuals/chg-carbo-hydrogen-generation.svg"
+  },
+  {
+    "slug": "butanoil-livestock-sewage-waste-recycling",
+    "title": "BUTANOIL (Livestock & Sewage Waste Recycling)",
+    "file": "assets/images/technology-visuals/butanoil-livestock-sewage-waste-recycling.svg"
+  },
+  {
+    "slug": "breezer-breezer-arbok-arbok-air-with-the-higher-power-variant-breezer-turbo",
+    "title": "BREEZER (BREEZER ARBOK / Arbok-Air), with the higher-power variant BREEZER-TURBO",
+    "file": "assets/images/technology-visuals/breezer-breezer-arbok-arbok-air-with-the-higher-power-variant-breezer-turbo.svg"
+  },
+  {
+    "slug": "bishofreeze-salt-concentrate-for-intensified-oil-and-gas-production",
+    "title": "BISHOFREEZE (Salt Concentrate for Intensified Oil and Gas Production)",
+    "file": "assets/images/technology-visuals/bishofreeze-salt-concentrate-for-intensified-oil-and-gas-production.svg"
+  },
+  {
+    "slug": "binary-battery-abb-arbok-binary-battery",
+    "title": "BINARY BATTERY (ABB — Arbok Binary Battery)",
+    "file": "assets/images/technology-visuals/binary-battery-abb-arbok-binary-battery.svg"
+  },
+  {
+    "slug": "batterator",
+    "title": "BATTERATOR",
+    "file": "assets/images/technology-visuals/batterator.svg"
+  },
+  {
+    "slug": "arbok-zwd-gasification-gasificationzwd-integrated-process",
+    "title": "Arbok-ZWD Gasification (Gasification–ZWD Integrated Process)",
+    "file": "assets/images/technology-visuals/arbok-zwd-gasification-gasificationzwd-integrated-process.svg"
+  },
+  {
+    "slug": "arbok-wind",
+    "title": "Arbok-Wind",
+    "file": "assets/images/technology-visuals/arbok-wind.svg"
+  },
+  {
+    "slug": "arbok-vcbc-bunker-cleaning",
+    "title": "Arbok-VCBC (Bunker Cleaning)",
+    "file": "assets/images/technology-visuals/arbok-vcbc-bunker-cleaning.svg"
+  },
+  {
+    "slug": "arbok-uniformis",
+    "title": "ARBOK-UNIFORMIS",
+    "file": "assets/images/technology-visuals/arbok-uniformis.svg"
+  },
+  {
+    "slug": "arbok-uria",
+    "title": "ARBOK-URIA",
+    "file": "assets/images/technology-visuals/arbok-uria.svg"
+  },
+  {
+    "slug": "arbok-tribo",
+    "title": "Arbok-Tribo",
+    "file": "assets/images/technology-visuals/arbok-tribo.svg"
+  },
+  {
+    "slug": "arbok-termite",
+    "title": "Arbok-Termite",
+    "file": "assets/images/technology-visuals/arbok-termite.svg"
+  },
+  {
+    "slug": "arbok-sun-oily",
+    "title": "Arbok-Sun-Oily",
+    "file": "assets/images/technology-visuals/arbok-sun-oily.svg"
+  },
+  {
+    "slug": "arbok-seawing",
+    "title": "Arbok-SeaWing",
+    "file": "assets/images/technology-visuals/arbok-seawing.svg"
+  },
+  {
+    "slug": "arbok-stec",
+    "title": "Arbok-STEC",
+    "file": "assets/images/technology-visuals/arbok-stec.svg"
+  },
+  {
+    "slug": "arbok-rotor-wind-arw",
+    "title": "Arbok Rotor Wind (ARW)",
+    "file": "assets/images/technology-visuals/arbok-rotor-wind-arw.svg"
+  },
+  {
+    "slug": "arbok-repeel-a-k-a-arbok-trinity",
+    "title": "Arbok-Repeel (a.k.a. Arbok-TRINITY)",
+    "file": "assets/images/technology-visuals/arbok-repeel-a-k-a-arbok-trinity.svg"
+  },
+  {
+    "slug": "arbok-repeel-olive",
+    "title": "Arbok-Repeel — Olive",
+    "file": "assets/images/technology-visuals/arbok-repeel-olive.svg"
+  },
+  {
+    "slug": "arbok-pyrolysis",
+    "title": "Arbok-Pyrolysis",
+    "file": "assets/images/technology-visuals/arbok-pyrolysis.svg"
+  },
+  {
+    "slug": "arbok-pulp",
+    "title": "Arbok-Pulp",
+    "file": "assets/images/technology-visuals/arbok-pulp.svg"
+  },
+  {
+    "slug": "arbok-potassium-potash-and-metallic-potassium-from-pruning-waste-and-sargassum",
+    "title": "Arbok-Potassium — Potash and Metallic Potassium from Pruning Waste and Sargassum",
+    "file": "assets/images/technology-visuals/arbok-potassium-potash-and-metallic-potassium-from-pruning-waste-and-sargassum.svg"
+  },
+  {
+    "slug": "arbok-phytobarrier",
+    "title": "Arbok-PhytoBarrier",
+    "file": "assets/images/technology-visuals/arbok-phytobarrier.svg"
+  },
+  {
+    "slug": "arbok-phosvita",
+    "title": "Arbok-PhosVita",
+    "file": "assets/images/technology-visuals/arbok-phosvita.svg"
+  },
+  {
+    "slug": "arbok-po-palm-oil",
+    "title": "Arbok-PO (Palm-Oil)",
+    "file": "assets/images/technology-visuals/arbok-po-palm-oil.svg"
+  },
+  {
+    "slug": "arbok-plant",
+    "title": "Arbok-PLANT",
+    "file": "assets/images/technology-visuals/arbok-plant.svg"
+  },
+  {
+    "slug": "arbok-multiplier",
+    "title": "ARBOK-MULTIPLIER",
+    "file": "assets/images/technology-visuals/arbok-multiplier.svg"
+  },
+  {
+    "slug": "arbok-lacmus-lacmusa-platform",
+    "title": "Arbok-Lacmus (LACMUSA Platform)",
+    "file": "assets/images/technology-visuals/arbok-lacmus-lacmusa-platform.svg"
+  },
+  {
+    "slug": "arbok-k0-metallic-potassium-from-organic-waste-under-the-zero-waste-discharge-platform",
+    "title": "Arbok-K⁰ — Metallic Potassium from Organic Waste under the Zero Waste Discharge Platform",
+    "file": "assets/images/technology-visuals/arbok-k0-metallic-potassium-from-organic-waste-under-the-zero-waste-discharge-platform.svg"
+  },
+  {
+    "slug": "arbok-jfr-arbok-jet-fuel-recovery",
+    "title": "Arbok-JFR (Arbok Jet-Fuel Recovery)",
+    "file": "assets/images/technology-visuals/arbok-jfr-arbok-jet-fuel-recovery.svg"
+  },
+  {
+    "slug": "arbok-fluospar-fluorspar-fluorine-acid-value-chain",
+    "title": "Arbok-FluoSpar (Fluorspar → Fluorine-Acid Value Chain)",
+    "file": "assets/images/technology-visuals/arbok-fluospar-fluorspar-fluorine-acid-value-chain.svg"
+  },
+  {
+    "slug": "arbok-drymilk-arbok-dairy",
+    "title": "Arbok-DryMilk (Arbok Dairy)",
+    "file": "assets/images/technology-visuals/arbok-drymilk-arbok-dairy.svg"
+  },
+  {
+    "slug": "arbok-dairy",
+    "title": "Arbok-Dairy",
+    "file": "assets/images/technology-visuals/arbok-dairy.svg"
+  },
+  {
+    "slug": "arbok-criojet",
+    "title": "Arbok-Criojet",
+    "file": "assets/images/technology-visuals/arbok-criojet.svg"
+  },
+  {
+    "slug": "arbok-cavern",
+    "title": "Arbok-Cavern",
+    "file": "assets/images/technology-visuals/arbok-cavern.svg"
+  },
+  {
+    "slug": "arbok-blackbody-system-abbs",
+    "title": "Arbok-BlackBody System (ABBS)",
+    "file": "assets/images/technology-visuals/arbok-blackbody-system-abbs.svg"
+  },
+  {
+    "slug": "arbok-bioli",
+    "title": "Arbok-BioLi",
+    "file": "assets/images/technology-visuals/arbok-bioli.svg"
+  },
+  {
+    "slug": "arbok-biofuel",
+    "title": "Arbok-BioFuel",
+    "file": "assets/images/technology-visuals/arbok-biofuel.svg"
+  },
+  {
+    "slug": "arbok-air-water-based-vacuum-refrigeration-air-conditioning",
+    "title": "Arbok-Air (Water-Based Vacuum Refrigeration Air Conditioning)",
+    "file": "assets/images/technology-visuals/arbok-air-water-based-vacuum-refrigeration-air-conditioning.svg"
+  },
+  {
+    "slug": "arbok-acidion",
+    "title": "Arbok-Acidion",
+    "file": "assets/images/technology-visuals/arbok-acidion.svg"
+  },
+  {
+    "slug": "arbok-tea",
+    "title": "Arbok – Tea",
+    "file": "assets/images/technology-visuals/arbok-tea.svg"
+  },
+  {
+    "slug": "arbok-zero-organic-waste-azow",
+    "title": "Arbok Zero-Organic-Waste (AZOW)",
+    "file": "assets/images/technology-visuals/arbok-zero-organic-waste-azow.svg"
+  },
+  {
+    "slug": "arbok-upwelling-aqwu-deepcool",
+    "title": "Arbok Upwelling (AQWU) — DEEPCOOL",
+    "file": "assets/images/technology-visuals/arbok-upwelling-aqwu-deepcool.svg"
+  },
+  {
+    "slug": "arbok-nanofluid-collector-solargraphene-thermal-collector",
+    "title": "Arbok Nanofluid Collector (SolarGraphene Thermal Collector)",
+    "file": "assets/images/technology-visuals/arbok-nanofluid-collector-solargraphene-thermal-collector.svg"
+  },
+  {
+    "slug": "ammonia-trap",
+    "title": "Ammonia Trap",
+    "file": "assets/images/technology-visuals/ammonia-trap.svg"
+  },
+  {
+    "slug": "agrovolt",
+    "title": "AgroVolt",
+    "file": "assets/images/technology-visuals/agrovolt.svg"
+  },
+  {
+    "slug": "agrospark",
+    "title": "AgroSpark",
+    "file": "assets/images/technology-visuals/agrospark.svg"
+  },
+  {
+    "slug": "azow-s",
+    "title": "AZOW-S",
+    "file": "assets/images/technology-visuals/azow-s.svg"
+  },
+  {
+    "slug": "azow-domus",
+    "title": "AZOW-Domus",
+    "file": "assets/images/technology-visuals/azow-domus.svg"
+  },
+  {
+    "slug": "arbopool-closed-loop-pool-water-treatment",
+    "title": "ARBOPOOL (Closed-Loop Pool Water Treatment)",
+    "file": "assets/images/technology-visuals/arbopool-closed-loop-pool-water-treatment.svg"
+  },
+  {
+    "slug": "arbok-zr-hf-metal-case-development-track",
+    "title": "ARBOK-Zr-Hf (metal case — development track)",
+    "file": "assets/images/technology-visuals/arbok-zr-hf-metal-case-development-track.svg"
+  },
+  {
+    "slug": "arbok-yttrium",
+    "title": "ARBOK-Yttrium",
+    "file": "assets/images/technology-visuals/arbok-yttrium.svg"
+  },
+  {
+    "slug": "arbok-wash-closed-loop-laundry-system",
+    "title": "ARBOK-WASH (Closed-Loop Laundry System)",
+    "file": "assets/images/technology-visuals/arbok-wash-closed-loop-laundry-system.svg"
+  },
+  {
+    "slug": "arbok-vanadium-metal-case-vanadium-from-western-u-s-alkaline-groundwater",
+    "title": "ARBOK-Vanadium (metal case) — vanadium from Western U.S. alkaline groundwater",
+    "file": "assets/images/technology-visuals/arbok-vanadium-metal-case-vanadium-from-western-u-s-alkaline-groundwater.svg"
+  },
+  {
+    "slug": "arbok-vc-vacuum-cracking-platform",
+    "title": "ARBOK-VC (Vacuum Cracking) — platform",
+    "file": "assets/images/technology-visuals/arbok-vc-vacuum-cracking-platform.svg"
+  },
+  {
+    "slug": "arbok-uranium-metal-case",
+    "title": "ARBOK-Uranium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-uranium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-underground-water",
+    "title": "ARBOK-Underground-Water",
+    "file": "assets/images/technology-visuals/arbok-underground-water.svg"
+  },
+  {
+    "slug": "arbok-tungsten-metal-case-tungsten-from-mine-water",
+    "title": "ARBOK-Tungsten (metal case) — tungsten from mine water",
+    "file": "assets/images/technology-visuals/arbok-tungsten-metal-case-tungsten-from-mine-water.svg"
+  },
+  {
+    "slug": "arbok-tritium-vacuum-isotope-separation-for-tritiated-water",
+    "title": "ARBOK-Tritium (Vacuum Isotope Separation for Tritiated Water)",
+    "file": "assets/images/technology-visuals/arbok-tritium-vacuum-isotope-separation-for-tritiated-water.svg"
+  },
+  {
+    "slug": "arbok-trinity-rice-selective-acid-mist-pest-control-for-rice",
+    "title": "ARBOK-Trinity-Rice (Selective Acid-Mist Pest Control for Rice)",
+    "file": "assets/images/technology-visuals/arbok-trinity-rice-selective-acid-mist-pest-control-for-rice.svg"
+  },
+  {
+    "slug": "arbok-trideo",
+    "title": "ARBOK-Trideo",
+    "file": "assets/images/technology-visuals/arbok-trideo.svg"
+  },
+  {
+    "slug": "arbok-tomato-pepper",
+    "title": "ARBOK-Tomato-Pepper",
+    "file": "assets/images/technology-visuals/arbok-tomato-pepper.svg"
+  },
+  {
+    "slug": "arbok-tin",
+    "title": "ARBOK-Tin",
+    "file": "assets/images/technology-visuals/arbok-tin.svg"
+  },
+  {
+    "slug": "arbok-thorium",
+    "title": "ARBOK-Thorium",
+    "file": "assets/images/technology-visuals/arbok-thorium.svg"
+  },
+  {
+    "slug": "arbok-thallium-metal-case",
+    "title": "ARBOK-Thallium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-thallium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-terbium-metal-case",
+    "title": "ARBOK-Terbium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-terbium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-tellurium-metal-case-tellurium-from-copper-anode-slime-and-refinery-effluent",
+    "title": "ARBOK-Tellurium (metal case) — tellurium from copper anode slime and refinery effluent",
+    "file": "assets/images/technology-visuals/arbok-tellurium-metal-case-tellurium-from-copper-anode-slime-and-refinery-effluent.svg"
+  },
+  {
+    "slug": "arbok-turbio-closed-loop-hydro-power-generator",
+    "title": "ARBOK-TURBIO (Closed-Loop Hydro Power Generator)",
+    "file": "assets/images/technology-visuals/arbok-turbio-closed-loop-hydro-power-generator.svg"
+  },
+  {
+    "slug": "arbok-trinity-olive",
+    "title": "ARBOK-TRINITY-Olive",
+    "file": "assets/images/technology-visuals/arbok-trinity-olive.svg"
+  },
+  {
+    "slug": "arbok-trinity-mosquito",
+    "title": "ARBOK-TRINITY-Mosquito",
+    "file": "assets/images/technology-visuals/arbok-trinity-mosquito.svg"
+  },
+  {
+    "slug": "arbok-tomatec",
+    "title": "ARBOK-TOMATEC",
+    "file": "assets/images/technology-visuals/arbok-tomatec.svg"
+  },
+  {
+    "slug": "arbok-terragen-terra-genesis",
+    "title": "ARBOK-TERRAGEN (Terra Genesis)",
+    "file": "assets/images/technology-visuals/arbok-terragen-terra-genesis.svg"
+  },
+  {
+    "slug": "arbok-telorise-telomerase-platform",
+    "title": "ARBOK-TELORISE (Telomerase Platform)",
+    "file": "assets/images/technology-visuals/arbok-telorise-telomerase-platform.svg"
+  },
+  {
+    "slug": "arbok-tega-tio2-tegatio",
+    "title": "ARBOK TEGA-TiO₂ (TEGATIO)",
+    "file": "assets/images/technology-visuals/arbok-tega-tio2-tegatio.svg"
+  },
+  {
+    "slug": "arbok-tega-si-tegasi",
+    "title": "ARBOK TEGA-Si (TEGASI)",
+    "file": "assets/images/technology-visuals/arbok-tega-si-tegasi.svg"
+  },
+  {
+    "slug": "arbok-tega-mos2-tegamos",
+    "title": "ARBOK TEGA-MoS₂ (TEGAMOS)",
+    "file": "assets/images/technology-visuals/arbok-tega-mos2-tegamos.svg"
+  },
+  {
+    "slug": "arbok-supercodec",
+    "title": "ARBOK-SuperCodec",
+    "file": "assets/images/technology-visuals/arbok-supercodec.svg"
+  },
+  {
+    "slug": "arbok-submarine-water-thermodynamic-cold-evaporation-for-submarine-water-supply",
+    "title": "ARBOK-Submarine-Water (Thermodynamic Cold Evaporation for Submarine Water Supply)",
+    "file": "assets/images/technology-visuals/arbok-submarine-water-thermodynamic-cold-evaporation-for-submarine-water-supply.svg"
+  },
+  {
+    "slug": "arbok-strontium-metal-case",
+    "title": "ARBOK-Strontium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-strontium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-stone-fruit-sharka",
+    "title": "ARBOK-Stone-Fruit-Sharka",
+    "file": "assets/images/technology-visuals/arbok-stone-fruit-sharka.svg"
+  },
+  {
+    "slug": "arbok-stellar",
+    "title": "Arbok-Stellar",
+    "file": "assets/images/technology-visuals/arbok-stellar.svg"
+  },
+  {
+    "slug": "arbok-solvents",
+    "title": "ARBOK-Solvents",
+    "file": "assets/images/technology-visuals/arbok-solvents.svg"
+  },
+  {
+    "slug": "arbok-silver-metal-case",
+    "title": "ARBOK-Silver (metal case)",
+    "file": "assets/images/technology-visuals/arbok-silver-metal-case.svg"
+  },
+  {
+    "slug": "arbok-selenium-metal-case",
+    "title": "ARBOK-Selenium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-selenium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-scrubber-cement-kiln-dust-potash-fertilizers-salts-metal-concentrates",
+    "title": "ARBOK-Scrubber (cement kiln dust → potash fertilizers, salts, metal concentrates)",
+    "file": "assets/images/technology-visuals/arbok-scrubber-cement-kiln-dust-potash-fertilizers-salts-metal-concentrates.svg"
+  },
+  {
+    "slug": "arbok-scandium-ree-metal-case",
+    "title": "ARBOK-Scandium-REE (metal case)",
+    "file": "assets/images/technology-visuals/arbok-scandium-ree-metal-case.svg"
+  },
+  {
+    "slug": "arbok-sulphur",
+    "title": "ARBOK-SULPHUR",
+    "file": "assets/images/technology-visuals/arbok-sulphur.svg"
+  },
+  {
+    "slug": "arbok-sugar-beet-yellowing",
+    "title": "ARBOK-Sugar-Beet-Yellowing",
+    "file": "assets/images/technology-visuals/arbok-sugar-beet-yellowing.svg"
+  },
+  {
+    "slug": "arbok-sterivac",
+    "title": "ARBOK-STERIVAC",
+    "file": "assets/images/technology-visuals/arbok-sterivac.svg"
+  },
+  {
+    "slug": "arbok-stealth-cable-asc",
+    "title": "ARBOK-STEALTH CABLE (ASC)",
+    "file": "assets/images/technology-visuals/arbok-stealth-cable-asc.svg"
+  },
+  {
+    "slug": "arbok-sparkfire-sparkfire",
+    "title": "ARBOK-SPARKFIRE (SparkFire)",
+    "file": "assets/images/technology-visuals/arbok-sparkfire-sparkfire.svg"
+  },
+  {
+    "slug": "arbok-sonar-real-time-water-quality-monitoring-system",
+    "title": "Arbok-Sonar (real-time water quality monitoring system)",
+    "file": "assets/images/technology-visuals/arbok-sonar-real-time-water-quality-monitoring-system.svg"
+  },
+  {
+    "slug": "arbok-soda",
+    "title": "ARBOK-SODA",
+    "file": "assets/images/technology-visuals/arbok-soda.svg"
+  },
+  {
+    "slug": "arbok-sargassum-stop-sargassum-program",
+    "title": "ARBOK-SARGASSUM (STOP-SARGASSUM program)",
+    "file": "assets/images/technology-visuals/arbok-sargassum-stop-sargassum-program.svg"
+  },
+  {
+    "slug": "arbok-sa-sulphuric-acid",
+    "title": "ARBOK-SA (Sulphuric Acid)",
+    "file": "assets/images/technology-visuals/arbok-sa-sulphuric-acid.svg"
+  },
+  {
+    "slug": "arbok-ruthenium",
+    "title": "ARBOK-Ruthenium",
+    "file": "assets/images/technology-visuals/arbok-ruthenium.svg"
+  },
+  {
+    "slug": "arbok-rubidium-metal-case",
+    "title": "ARBOK-Rubidium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-rubidium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-rhodium-metal-case",
+    "title": "ARBOK-Rhodium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-rhodium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-rhenium-metal-case",
+    "title": "ARBOK-Rhenium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-rhenium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-repeel-wheat-selective-foliar-pest-control-plus-antifungal-block-for-wheat",
+    "title": "ARBOK-Repeel-Wheat (Selective Foliar Pest Control plus Antifungal Block for Wheat)",
+    "file": "assets/images/technology-visuals/arbok-repeel-wheat-selective-foliar-pest-control-plus-antifungal-block-for-wheat.svg"
+  },
+  {
+    "slug": "arbok-repeel-vineyard-wine-table-raisin-grapes",
+    "title": "ARBOK-Repeel-Vineyard (Wine, Table, Raisin Grapes)",
+    "file": "assets/images/technology-visuals/arbok-repeel-vineyard-wine-table-raisin-grapes.svg"
+  },
+  {
+    "slug": "arbok-repeel-sunnpest-wheat-grain-quality-protection-against-eurygaster-integriceps",
+    "title": "ARBOK-Repeel-SunnPest (Wheat Grain-Quality Protection against Eurygaster integriceps)",
+    "file": "assets/images/technology-visuals/arbok-repeel-sunnpest-wheat-grain-quality-protection-against-eurygaster-integriceps.svg"
+  },
+  {
+    "slug": "arbok-repeel-soya-selective-acid-mist-pest-control-for-soybean",
+    "title": "ARBOK-Repeel-Soya (Selective Acid-Mist Pest Control for Soybean)",
+    "file": "assets/images/technology-visuals/arbok-repeel-soya-selective-acid-mist-pest-control-for-soybean.svg"
+  },
+  {
+    "slug": "arbok-repeel-locust-desert-migratory-and-grasshopper-control",
+    "title": "ARBOK-Repeel-Locust (Desert, Migratory, and Grasshopper Control)",
+    "file": "assets/images/technology-visuals/arbok-repeel-locust-desert-migratory-and-grasshopper-control.svg"
+  },
+  {
+    "slug": "arbok-repeel-corn-four-layer-selective-pest-control-for-corn",
+    "title": "ARBOK-Repeel-Corn (Four-Layer Selective Pest Control for Corn)",
+    "file": "assets/images/technology-visuals/arbok-repeel-corn-four-layer-selective-pest-control-for-corn.svg"
+  },
+  {
+    "slug": "arbok-repeel-cocoa-selective-acid-mist-pest-control-for-cocoa",
+    "title": "ARBOK-Repeel-Cocoa (Selective Acid-Mist Pest Control for Cocoa)",
+    "file": "assets/images/technology-visuals/arbok-repeel-cocoa-selective-acid-mist-pest-control-for-cocoa.svg"
+  },
+  {
+    "slug": "arbok-rubber-graphene-based-rubber-for-tires",
+    "title": "ARBOK-RUBBER (Graphene-Based Rubber for Tires)",
+    "file": "assets/images/technology-visuals/arbok-rubber-graphene-based-rubber-for-tires.svg"
+  },
+  {
+    "slug": "arbok-roa-reverse-osmosis-arbok",
+    "title": "ARBOK-ROA (Reverse Osmosis Arbok)",
+    "file": "assets/images/technology-visuals/arbok-roa-reverse-osmosis-arbok.svg"
+  },
+  {
+    "slug": "arbok-revive",
+    "title": "ARBOK-REVIVE",
+    "file": "assets/images/technology-visuals/arbok-revive.svg"
+  },
+  {
+    "slug": "arbok-revita",
+    "title": "ARBOK-REVITA",
+    "file": "assets/images/technology-visuals/arbok-revita.svg"
+  },
+  {
+    "slug": "arbok-radar",
+    "title": "ARBOK-RADAR",
+    "file": "assets/images/technology-visuals/arbok-radar.svg"
+  },
+  {
+    "slug": "arbok-quantum",
+    "title": "ARBOK-QUANTUM",
+    "file": "assets/images/technology-visuals/arbok-quantum.svg"
+  },
+  {
+    "slug": "arbok-pulling-ejector",
+    "title": "ARBOK-Pulling Ejector",
+    "file": "assets/images/technology-visuals/arbok-pulling-ejector.svg"
+  },
+  {
+    "slug": "arbok-praseodymium-metal-case-praseodymium-from-magnet-leachates-magnet-plant-effluent-and-phosphogypsum",
+    "title": "ARBOK-Praseodymium (metal case) — praseodymium from magnet leachates, magnet-plant effluent and phosphogypsum",
+    "file": "assets/images/technology-visuals/arbok-praseodymium-metal-case-praseodymium-from-magnet-leachates-magnet-plant-effluent-and-phosphogypsum.svg"
+  },
+  {
+    "slug": "arbok-powercool",
+    "title": "ARBOK-PowerCool",
+    "file": "assets/images/technology-visuals/arbok-powercool.svg"
+  },
+  {
+    "slug": "arbok-potato",
+    "title": "ARBOK-Potato",
+    "file": "assets/images/technology-visuals/arbok-potato.svg"
+  },
+  {
+    "slug": "arbok-port-sludge-cleanup",
+    "title": "ARBOK-Port-Sludge-Cleanup",
+    "file": "assets/images/technology-visuals/arbok-port-sludge-cleanup.svg"
+  },
+  {
+    "slug": "arbok-platinum-metal-case",
+    "title": "ARBOK-Platinum (metal case)",
+    "file": "assets/images/technology-visuals/arbok-platinum-metal-case.svg"
+  },
+  {
+    "slug": "arbok-phosphate",
+    "title": "ARBOK-Phosphate",
+    "file": "assets/images/technology-visuals/arbok-phosphate.svg"
+  },
+  {
+    "slug": "arbok-palm-solid-fuel-psf-palmfuel",
+    "title": "ARBOK-Palm Solid Fuel (PSF / PALMFUEL)",
+    "file": "assets/images/technology-visuals/arbok-palm-solid-fuel-psf-palmfuel.svg"
+  },
+  {
+    "slug": "arbok-palladium-metal-case",
+    "title": "ARBOK-Palladium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-palladium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-paint",
+    "title": "ARBOK-Paint",
+    "file": "assets/images/technology-visuals/arbok-paint.svg"
+  },
+  {
+    "slug": "arbok-pv-closing-the-effluent-of-solar-panel-recycling",
+    "title": "ARBOK-PV (closing the effluent of solar-panel recycling)",
+    "file": "assets/images/technology-visuals/arbok-pv-closing-the-effluent-of-solar-panel-recycling.svg"
+  },
+  {
+    "slug": "arbok-pool-renewal",
+    "title": "ARBOK-POOL RENEWAL",
+    "file": "assets/images/technology-visuals/arbok-pool-renewal.svg"
+  },
+  {
+    "slug": "arbok-pipeline-water-affordable-transfer-technology",
+    "title": "ARBOK-PIPELINE (Water-Affordable Transfer Technology)",
+    "file": "assets/images/technology-visuals/arbok-pipeline-water-affordable-transfer-technology.svg"
+  },
+  {
+    "slug": "arbok-pion",
+    "title": "ARBOK-PION",
+    "file": "assets/images/technology-visuals/arbok-pion.svg"
+  },
+  {
+    "slug": "arbok-phosphogypsum",
+    "title": "ARBOK-PHOSPHOGYPSUM",
+    "file": "assets/images/technology-visuals/arbok-phosphogypsum.svg"
+  },
+  {
+    "slug": "arbok-pharmix",
+    "title": "ARBOK-PHARMIX",
+    "file": "assets/images/technology-visuals/arbok-pharmix.svg"
+  },
+  {
+    "slug": "arbok-phantom-invisible-soldier-thermally-expanded-graphite-camouflage-technology",
+    "title": "Arbok-Phantom (Invisible Soldier — thermally expanded graphite camouflage technology)",
+    "file": "assets/images/technology-visuals/arbok-phantom-invisible-soldier-thermally-expanded-graphite-camouflage-technology.svg"
+  },
+  {
+    "slug": "arbok-pat-purification-and-ammonia-trap",
+    "title": "ARBOK-PAT (Purification and Ammonia Trap)",
+    "file": "assets/images/technology-visuals/arbok-pat-purification-and-ammonia-trap.svg"
+  },
+  {
+    "slug": "arbok-orr-oil-regeneration-recovery",
+    "title": "ARBOK-ORR (Oil Regeneration & Recovery)",
+    "file": "assets/images/technology-visuals/arbok-orr-oil-regeneration-recovery.svg"
+  },
+  {
+    "slug": "arbok-oil-well-regenesis-owr",
+    "title": "ARBOK-OIL WELL REGENESIS (OWR)",
+    "file": "assets/images/technology-visuals/arbok-oil-well-regenesis-owr.svg"
+  },
+  {
+    "slug": "arbok-neodymium-metal-case-neodymium-from-phosphogypsum-magnet-leachates-and-magnet-plant-effluent",
+    "title": "ARBOK-Neodymium (metal case) — neodymium from phosphogypsum, magnet leachates and magnet-plant effluent",
+    "file": "assets/images/technology-visuals/arbok-neodymium-metal-case-neodymium-from-phosphogypsum-magnet-leachates-and-magnet-plant-effluent.svg"
+  },
+  {
+    "slug": "arboknateg-sodium-battery-on-graphene-grade-teg",
+    "title": "ARBOK·NaTEG (Sodium Battery on Graphene-Grade TEG)",
+    "file": "assets/images/technology-visuals/arboknateg-sodium-battery-on-graphene-grade-teg.svg"
+  },
+  {
+    "slug": "nanodrive",
+    "title": "NANODRIVE",
+    "file": "assets/images/technology-visuals/nanodrive.svg"
+  },
+  {
+    "slug": "arbok-molybdenum-metal-case-molybdenum-from-copper-effluent",
+    "title": "ARBOK-Molybdenum (metal case) — molybdenum from copper effluent",
+    "file": "assets/images/technology-visuals/arbok-molybdenum-metal-case-molybdenum-from-copper-effluent.svg"
+  },
+  {
+    "slug": "arbok-methanetrap",
+    "title": "ARBOK-MethaneTrap",
+    "file": "assets/images/technology-visuals/arbok-methanetrap.svg"
+  },
+  {
+    "slug": "arbok-marinesludge-ship-oily-sludge-processing",
+    "title": "ARBOK-MarineSludge (Ship Oily Sludge Processing)",
+    "file": "assets/images/technology-visuals/arbok-marinesludge-ship-oily-sludge-processing.svg"
+  },
+  {
+    "slug": "arbok-manganese-manganese-recovery-from-effluent",
+    "title": "ARBOK-Manganese — manganese recovery from effluent",
+    "file": "assets/images/technology-visuals/arbok-manganese-manganese-recovery-from-effluent.svg"
+  },
+  {
+    "slug": "arbok-mobile",
+    "title": "ARBOK-MOBILE",
+    "file": "assets/images/technology-visuals/arbok-mobile.svg"
+  },
+  {
+    "slug": "arbok-milk-biosafe",
+    "title": "ARBOK-MILK BIOSAFE",
+    "file": "assets/images/technology-visuals/arbok-milk-biosafe.svg"
+  },
+  {
+    "slug": "arbok-metrap-methane-trap",
+    "title": "ARBOK-METRAP (Methane Trap)",
+    "file": "assets/images/technology-visuals/arbok-metrap-methane-trap.svg"
+  },
+  {
+    "slug": "arbok-lutetium-metal-case",
+    "title": "ARBOK-Lutetium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-lutetium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-lithium-metal-case",
+    "title": "ARBOK-Lithium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-lithium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-light-water",
+    "title": "ARBOK-Light Water",
+    "file": "assets/images/technology-visuals/arbok-light-water.svg"
+  },
+  {
+    "slug": "arbok-lead-water-heavy-metals-in-drinking-water",
+    "title": "ARBOK-Lead-Water (heavy metals in drinking water)",
+    "file": "assets/images/technology-visuals/arbok-lead-water-heavy-metals-in-drinking-water.svg"
+  },
+  {
+    "slug": "arbok-latex-arbok-azow-applied-to-natural-rubber-latex-effluent",
+    "title": "ARBOK-Latex (ARBOK-AZOW applied to natural rubber / latex effluent)",
+    "file": "assets/images/technology-visuals/arbok-latex-arbok-azow-applied-to-natural-rubber-latex-effluent.svg"
+  },
+  {
+    "slug": "arbok-lanthanum-metal-case",
+    "title": "ARBOK-Lanthanum (metal case)",
+    "file": "assets/images/technology-visuals/arbok-lanthanum-metal-case.svg"
+  },
+  {
+    "slug": "arbok-lanthanum-cerium-metal-case",
+    "title": "ARBOK-Lanthanum-Cerium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-lanthanum-cerium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-lls-liquidliquid-separation",
+    "title": "ARBOK-LLS (Liquid–Liquid Separation)",
+    "file": "assets/images/technology-visuals/arbok-lls-liquidliquid-separation.svg"
+  },
+  {
+    "slug": "arbok-liquid-gen",
+    "title": "ARBOK-LIQUID GEN",
+    "file": "assets/images/technology-visuals/arbok-liquid-gen.svg"
+  },
+  {
+    "slug": "arbok-liner-alb",
+    "title": "ARBOK-LINER (ALB)",
+    "file": "assets/images/technology-visuals/arbok-liner-alb.svg"
+  },
+  {
+    "slug": "arbok-lifesphere-one-biological-process-one-engineering-system",
+    "title": "ARBOK-LIFESPHERE (One Biological Process. One Engineering System.)",
+    "file": "assets/images/technology-visuals/arbok-lifesphere-one-biological-process-one-engineering-system.svg"
+  },
+  {
+    "slug": "arbok-jumbo-jet-desalination-unit-jumbo-200-jdu-200",
+    "title": "ARBOK-JUMBO (Jet Desalination Unit Jumbo-200, JDU-200)",
+    "file": "assets/images/technology-visuals/arbok-jumbo-jet-desalination-unit-jumbo-200-jdu-200.svg"
+  },
+  {
+    "slug": "arbok-iridium-metal-case-iridium-from-pgm-mine-waters-tailings-waters-and-brines",
+    "title": "ARBOK-Iridium (metal case) — iridium from PGM mine waters, tailings waters and brines",
+    "file": "assets/images/technology-visuals/arbok-iridium-metal-case-iridium-from-pgm-mine-waters-tailings-waters-and-brines.svg"
+  },
+  {
+    "slug": "arbok-iodine-metal-case-bromine-as-co-product",
+    "title": "ARBOK-Iodine (metal case; bromine as co-product)",
+    "file": "assets/images/technology-visuals/arbok-iodine-metal-case-bromine-as-co-product.svg"
+  },
+  {
+    "slug": "arbok-indium-metal-case",
+    "title": "ARBOK-Indium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-indium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-island",
+    "title": "ARBOK-ISLAND",
+    "file": "assets/images/technology-visuals/arbok-island.svg"
+  },
+  {
+    "slug": "arbok-indatron-close-loop-induction-generator",
+    "title": "ARBOK-INDATRON (Close-Loop Induction Generator)",
+    "file": "assets/images/technology-visuals/arbok-indatron-close-loop-induction-generator.svg"
+  },
+  {
+    "slug": "arbok-helium",
+    "title": "ARBOK-Helium",
+    "file": "assets/images/technology-visuals/arbok-helium.svg"
+  },
+  {
+    "slug": "arbok-halogens-uhp-halogen-gas-supply",
+    "title": "ARBOK-Halogens (UHP halogen gas supply)",
+    "file": "assets/images/technology-visuals/arbok-halogens-uhp-halogen-gas-supply.svg"
+  },
+  {
+    "slug": "arbok-hs-hydrogen-sulfide-capture-conversion",
+    "title": "ARBOK-HS (Hydrogen Sulfide Capture & Conversion)",
+    "file": "assets/images/technology-visuals/arbok-hs-hydrogen-sulfide-capture-conversion.svg"
+  },
+  {
+    "slug": "arbok-he-helium-extraction",
+    "title": "ARBOK-HE (Helium Extraction)",
+    "file": "assets/images/technology-visuals/arbok-he-helium-extraction.svg"
+  },
+  {
+    "slug": "arbok-habp-hybrid-acid-alkaline-battery-pack-product-name-graphenecell-hx",
+    "title": "ARBOK-HABP (Hybrid Acid-Alkaline Battery Pack) — product name: GrapheneCell HX",
+    "file": "assets/images/technology-visuals/arbok-habp-hybrid-acid-alkaline-battery-pack-product-name-graphenecell-hx.svg"
+  },
+  {
+    "slug": "arbok-glide-charged-nano-antifouling-coating-for-marine-hulls",
+    "title": "ARBOK-Glide (Charged-Nano Antifouling Coating for Marine Hulls)",
+    "file": "assets/images/technology-visuals/arbok-glide-charged-nano-antifouling-coating-for-marine-hulls.svg"
+  },
+  {
+    "slug": "arbok-germanium-gallium-metal-case",
+    "title": "ARBOK-Germanium-Gallium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-germanium-gallium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-gas-arbok-evaporation-applied-to-dissolved-gases-in-groundwater",
+    "title": "ARBOK-Gas (Arbok-Evaporation applied to dissolved gases in groundwater)",
+    "file": "assets/images/technology-visuals/arbok-gas-arbok-evaporation-applied-to-dissolved-gases-in-groundwater.svg"
+  },
+  {
+    "slug": "arbok-gudron-acid-tar-lake-recovery",
+    "title": "ARBOK-GUDRON (Acid Tar Lake Recovery)",
+    "file": "assets/images/technology-visuals/arbok-gudron-acid-tar-lake-recovery.svg"
+  },
+  {
+    "slug": "arbok-gold-waters-metal-case",
+    "title": "ARBOK-Gold-Waters (metal case)",
+    "file": "assets/images/technology-visuals/arbok-gold-waters-metal-case.svg"
+  },
+  {
+    "slug": "arbok-geyser-arbok-geyser",
+    "title": "ARBOK-GEYSER (Arbok-Geyser)",
+    "file": "assets/images/technology-visuals/arbok-geyser-arbok-geyser.svg"
+  },
+  {
+    "slug": "arbok-galvanix",
+    "title": "ARBOK-GALVANIX",
+    "file": "assets/images/technology-visuals/arbok-galvanix.svg"
+  },
+  {
+    "slug": "arbok-finishing",
+    "title": "ARBOK-Finishing",
+    "file": "assets/images/technology-visuals/arbok-finishing.svg"
+  },
+  {
+    "slug": "arbok-fryloop",
+    "title": "ARBOK-FRYLOOP",
+    "file": "assets/images/technology-visuals/arbok-fryloop.svg"
+  },
+  {
+    "slug": "arbok-fertilizer",
+    "title": "ARBOK-FERTILIZER",
+    "file": "assets/images/technology-visuals/arbok-fertilizer.svg"
+  },
+  {
+    "slug": "arbok-europium",
+    "title": "ARBOK-Europium",
+    "file": "assets/images/technology-visuals/arbok-europium.svg"
+  },
+  {
+    "slug": "arbok-essentialoil-arbok-rose-essential-oil-crops-waste-recycling-and-vacuum-extraction",
+    "title": "ARBOK-EssentialOil (Arbok-Rose — Essential Oil Crops: Waste Recycling and Vacuum Extraction)",
+    "file": "assets/images/technology-visuals/arbok-essentialoil-arbok-rose-essential-oil-crops-waste-recycling-and-vacuum-extraction.svg"
+  },
+  {
+    "slug": "arbok-erbium-metal-case",
+    "title": "ARBOK-Erbium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-erbium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-emulsion",
+    "title": "ARBOK-Emulsion",
+    "file": "assets/images/technology-visuals/arbok-emulsion.svg"
+  },
+  {
+    "slug": "arbok-effluent",
+    "title": "ARBOK-EFFLUENT",
+    "file": "assets/images/technology-visuals/arbok-effluent.svg"
+  },
+  {
+    "slug": "arbok-dysprosium-metal-case-dysprosium-from-acid-mine-drainage-phosphogypsum-stacks-and-magnet-leachates",
+    "title": "ARBOK-Dysprosium (metal case) — dysprosium from acid mine drainage, phosphogypsum stacks and magnet leachates",
+    "file": "assets/images/technology-visuals/arbok-dysprosium-metal-case-dysprosium-from-acid-mine-drainage-phosphogypsum-stacks-and-magnet-leachates.svg"
+  },
+  {
+    "slug": "arbok-drytower",
+    "title": "ARBOK-DryTower",
+    "file": "assets/images/technology-visuals/arbok-drytower.svg"
+  },
+  {
+    "slug": "arbok-desalting-cold-crude-desalting",
+    "title": "ARBOK-Desalting (Cold Crude Desalting)",
+    "file": "assets/images/technology-visuals/arbok-desalting-cold-crude-desalting.svg"
+  },
+  {
+    "slug": "arbok-deion-solar-farms-cleaning",
+    "title": "ARBOK-DEION (solar farms cleaning)",
+    "file": "assets/images/technology-visuals/arbok-deion-solar-farms-cleaning.svg"
+  },
+  {
+    "slug": "arbok-defluor",
+    "title": "ARBOK-DEFLUOR",
+    "file": "assets/images/technology-visuals/arbok-defluor.svg"
+  },
+  {
+    "slug": "arbok-decomp",
+    "title": "Arbok-DECOMP",
+    "file": "assets/images/technology-visuals/arbok-decomp.svg"
+  },
+  {
+    "slug": "arbok-dealco-dealcoholization-via-vacuum-distillation",
+    "title": "ARBOK-DEALCO (DeAlcoholization via Vacuum Distillation)",
+    "file": "assets/images/technology-visuals/arbok-dealco-dealcoholization-via-vacuum-distillation.svg"
+  },
+  {
+    "slug": "arbok-cucurbits-triple-strike",
+    "title": "ARBOK-Cucurbits-Triple-Strike",
+    "file": "assets/images/technology-visuals/arbok-cucurbits-triple-strike.svg"
+  },
+  {
+    "slug": "arbok-copper-waters-metal-case",
+    "title": "ARBOK-Copper-Waters (metal case)",
+    "file": "assets/images/technology-visuals/arbok-copper-waters-metal-case.svg"
+  },
+  {
+    "slug": "arbok-cooltower",
+    "title": "ARBOK-CoolTower",
+    "file": "assets/images/technology-visuals/arbok-cooltower.svg"
+  },
+  {
+    "slug": "arbok-cobalt-metal-case-recovery-of-cobalt-from-acid-mine-drainage-and-spent-battery-processing-effluent",
+    "title": "ARBOK-Cobalt (metal case) — recovery of cobalt from acid mine drainage and spent-battery processing effluent",
+    "file": "assets/images/technology-visuals/arbok-cobalt-metal-case-recovery-of-cobalt-from-acid-mine-drainage-and-spent-battery-processing-effluent.svg"
+  },
+  {
+    "slug": "arbok-closedtower-closed-loop-cooling-unit-of-a-new-type-replacing-the-classic-wet-cooling-tower",
+    "title": "ARBOK-ClosedTower (closed-loop cooling unit of a new type, replacing the classic wet cooling tower)",
+    "file": "assets/images/technology-visuals/arbok-closedtower-closed-loop-cooling-unit-of-a-new-type-replacing-the-classic-wet-cooling-tower.svg"
+  },
+  {
+    "slug": "arbok-cesium-metal-case",
+    "title": "ARBOK-Cesium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-cesium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-cassava",
+    "title": "ARBOK-Cassava",
+    "file": "assets/images/technology-visuals/arbok-cassava.svg"
+  },
+  {
+    "slug": "arbok-cadmium",
+    "title": "ARBOK-Cadmium",
+    "file": "assets/images/technology-visuals/arbok-cadmium.svg"
+  },
+  {
+    "slug": "arbok-cruda",
+    "title": "ARBOK-CRUDA",
+    "file": "assets/images/technology-visuals/arbok-cruda.svg"
+  },
+  {
+    "slug": "arbok-coin-ac",
+    "title": "ARBOK-COIN (AC)",
+    "file": "assets/images/technology-visuals/arbok-coin-ac.svg"
+  },
+  {
+    "slug": "arbok-coffee",
+    "title": "ARBOK-COFFEE",
+    "file": "assets/images/technology-visuals/arbok-coffee.svg"
+  },
+  {
+    "slug": "arbok-coagulant-mixed-aluminium-ferric-sulfate-coagulant-from-bauxite-residue-and-phosphogypsum",
+    "title": "ARBOK-COAGULANT (mixed aluminium-ferric sulfate coagulant from bauxite residue and phosphogypsum)",
+    "file": "assets/images/technology-visuals/arbok-coagulant-mixed-aluminium-ferric-sulfate-coagulant-from-bauxite-residue-and-phosphogypsum.svg"
+  },
+  {
+    "slug": "arbok-chloride",
+    "title": "ARBOK-CHLORIDE",
+    "file": "assets/images/technology-visuals/arbok-chloride.svg"
+  },
+  {
+    "slug": "arbok-chemilake-puri",
+    "title": "ARBOK-CHEMILAKE-PURI",
+    "file": "assets/images/technology-visuals/arbok-chemilake-puri.svg"
+  },
+  {
+    "slug": "arbok-chain",
+    "title": "ARBOK-CHAIN",
+    "file": "assets/images/technology-visuals/arbok-chain.svg"
+  },
+  {
+    "slug": "arbok-butt",
+    "title": "ARBOK-Butt",
+    "file": "assets/images/technology-visuals/arbok-butt.svg"
+  },
+  {
+    "slug": "arbok-boron-separation-asb",
+    "title": "ARBOK-Boron Separation (ASB)",
+    "file": "assets/images/technology-visuals/arbok-boron-separation-asb.svg"
+  },
+  {
+    "slug": "arbok-bismuth",
+    "title": "ARBOK-Bismuth",
+    "file": "assets/images/technology-visuals/arbok-bismuth.svg"
+  },
+  {
+    "slug": "arbok-bioprotein-abp",
+    "title": "ARBOK-BioProtein (ABP)",
+    "file": "assets/images/technology-visuals/arbok-bioprotein-abp.svg"
+  },
+  {
+    "slug": "arbok-biobenzine-biogasoline-production",
+    "title": "ARBOK-BioBenzine (BioGasoline Production)",
+    "file": "assets/images/technology-visuals/arbok-biobenzine-biogasoline-production.svg"
+  },
+  {
+    "slug": "arbok-bi2te3-joint-tellurium-and-bismuth-recovery",
+    "title": "ARBOK-Bi₂Te₃ — joint tellurium and bismuth recovery",
+    "file": "assets/images/technology-visuals/arbok-bi2te3-joint-tellurium-and-bismuth-recovery.svg"
+  },
+  {
+    "slug": "arbok-beryllium",
+    "title": "ARBOK-Beryllium",
+    "file": "assets/images/technology-visuals/arbok-beryllium.svg"
+  },
+  {
+    "slug": "arbok-barium-metal-case",
+    "title": "ARBOK-Barium (metal case)",
+    "file": "assets/images/technology-visuals/arbok-barium-metal-case.svg"
+  },
+  {
+    "slug": "arbok-bananas",
+    "title": "ARBOK-Bananas",
+    "file": "assets/images/technology-visuals/arbok-bananas.svg"
+  },
+  {
+    "slug": "arbok-ballast-arbok-separation-applied-to-ships-ballast-water",
+    "title": "ARBOK-Ballast (ArboK Separation applied to ships’ ballast water)",
+    "file": "assets/images/technology-visuals/arbok-ballast-arbok-separation-applied-to-ships-ballast-water.svg"
+  },
+  {
+    "slug": "arbok-beverix-beverage-industry-zero-waste-discharge",
+    "title": "ARBOK-BEVERIX (Beverage Industry Zero Waste Discharge)",
+    "file": "assets/images/technology-visuals/arbok-beverix-beverage-industry-zero-waste-discharge.svg"
+  },
+  {
+    "slug": "arbok-arsenic",
+    "title": "ARBOK-Arsenic",
+    "file": "assets/images/technology-visuals/arbok-arsenic.svg"
+  },
+  {
+    "slug": "arbok-antimony-metal-case",
+    "title": "ARBOK-Antimony (metal case)",
+    "file": "assets/images/technology-visuals/arbok-antimony-metal-case.svg"
+  },
+  {
+    "slug": "arbok-ammonia",
+    "title": "ARBOK-Ammonia",
+    "file": "assets/images/technology-visuals/arbok-ammonia.svg"
+  },
+  {
+    "slug": "arbok-aluminium",
+    "title": "ARBOK-Aluminium",
+    "file": "assets/images/technology-visuals/arbok-aluminium.svg"
+  },
+  {
+    "slug": "arbok-algalbloom-algal-bloom-control-by-nutrient-removal",
+    "title": "ARBOK-AlgalBloom (Algal Bloom Control by Nutrient Removal)",
+    "file": "assets/images/technology-visuals/arbok-algalbloom-algal-bloom-control-by-nutrient-removal.svg"
+  },
+  {
+    "slug": "arbok-albus-closed-loop-near-waterless-laundry-system-for-natural-textiles-workwear-uniform-application-branded-albus-uniform-taus-technology-arbok-uniformis",
+    "title": "ARBOK-ALBUS (closed-loop, near-waterless laundry system for natural textiles); workwear/uniform application branded ALBUS-Uniform / TAUS (Technology Arbok Uniformis)",
+    "file": "assets/images/technology-visuals/arbok-albus-closed-loop-near-waterless-laundry-system-for-natural-textiles-workwear-uniform-application-branded-albus-uniform-taus-technology-arbok-uniformis.svg"
+  },
+  {
+    "slug": "arbok-airgizer",
+    "title": "ARBOK-Airgizer",
+    "file": "assets/images/technology-visuals/arbok-airgizer.svg"
+  },
+  {
+    "slug": "arbok-agrovac-aav",
+    "title": "ARBOK-AgroVac (AAV)",
+    "file": "assets/images/technology-visuals/arbok-agrovac-aav.svg"
+  },
+  {
+    "slug": "arbok-avd-amalgam-vacuum-distillation-arbok-avd-amalgam-vacuum-distillation",
+    "title": "Arbok-AVD (Amalgam Vacuum Distillation)",
+    "file": "assets/images/technology-visuals/arbok-avd-amalgam-vacuum-distillation-arbok-avd-amalgam-vacuum-distillation.svg"
+  },
+  {
+    "slug": "arbok-voc-recovery",
+    "title": "ARBOK VOC RECOVERY",
+    "file": "assets/images/technology-visuals/arbok-voc-recovery.svg"
+  },
+  {
+    "slug": "arbok-textile-waste",
+    "title": "ARBOK TEXTILE-WASTE",
+    "file": "assets/images/technology-visuals/arbok-textile-waste.svg"
+  },
+  {
+    "slug": "arbok-second-skin",
+    "title": "ARBOK SECOND SKIN",
+    "file": "assets/images/technology-visuals/arbok-second-skin.svg"
+  },
+  {
+    "slug": "arbok-red-mud-bauxite-residue-recovery",
+    "title": "ARBOK RED MUD (Bauxite Residue Recovery)",
+    "file": "assets/images/technology-visuals/arbok-red-mud-bauxite-residue-recovery.svg"
+  },
+  {
+    "slug": "arbok-peat-arbok-vacuum-drying-for-peat-fuel-briquettes",
+    "title": "ARBOK Peat (Arbok Vacuum Drying for Peat → Fuel Briquettes)",
+    "file": "assets/images/technology-visuals/arbok-peat-arbok-vacuum-drying-for-peat-fuel-briquettes.svg"
+  },
+  {
+    "slug": "arbok-pv-silver-silver-from-solar-panel-recycling-effluent",
+    "title": "ARBOK PV-Silver (silver from solar-panel recycling effluent)",
+    "file": "assets/images/technology-visuals/arbok-pv-silver-silver-from-solar-panel-recycling-effluent.svg"
+  },
+  {
+    "slug": "arbok-puri",
+    "title": "ARBOK PURI",
+    "file": "assets/images/technology-visuals/arbok-puri.svg"
+  },
+  {
+    "slug": "arbok-medzwd-medical-zero-waste-discharge",
+    "title": "ARBOK MedZWD (Medical Zero Waste Discharge)",
+    "file": "assets/images/technology-visuals/arbok-medzwd-medical-zero-waste-discharge.svg"
+  },
+  {
+    "slug": "arbok-low-carbon-water-low-carbon-water-threshold-why-reverse-osmosis-is-finished",
+    "title": "ARBOK Low-Carbon Water (Low-Carbon Water Threshold: Why Reverse Osmosis Is Finished)",
+    "file": "assets/images/technology-visuals/arbok-low-carbon-water-low-carbon-water-threshold-why-reverse-osmosis-is-finished.svg"
+  },
+  {
+    "slug": "arbok-liquid-armor-ala",
+    "title": "ARBOK LIQUID-ARMOR (ALA)",
+    "file": "assets/images/technology-visuals/arbok-liquid-armor-ala.svg"
+  },
+  {
+    "slug": "arbok-light-salt",
+    "title": "ARBOK LIGHT-SALT",
+    "file": "assets/images/technology-visuals/arbok-light-salt.svg"
+  },
+  {
+    "slug": "arbok-irrigation-arbok-evaporation-for-irrigation-grade-water",
+    "title": "ARBOK Irrigation (Arbok-Evaporation for irrigation-grade water)",
+    "file": "assets/images/technology-visuals/arbok-irrigation-arbok-evaporation-for-irrigation-grade-water.svg"
+  },
+  {
+    "slug": "arbok-gas-mask",
+    "title": "ARBOK GAS MASK",
+    "file": "assets/images/technology-visuals/arbok-gas-mask.svg"
+  },
+  {
+    "slug": "arbok-fuel-cell-magna-pt",
+    "title": "ARBOK Fuel Cell (MAGNA-Pt)",
+    "file": "assets/images/technology-visuals/arbok-fuel-cell-magna-pt.svg"
+  },
+  {
+    "slug": "arbok-floating-plant",
+    "title": "ARBOK Floating Plant",
+    "file": "assets/images/technology-visuals/arbok-floating-plant.svg"
+  },
+  {
+    "slug": "arbok-food-preservation-arbok-3x",
+    "title": "ARBOK FOOD PRESERVATION (ARBOK-3X)",
+    "file": "assets/images/technology-visuals/arbok-food-preservation-arbok-3x.svg"
+  },
+  {
+    "slug": "arbok-fluorite-hf-value-chain",
+    "title": "ARBOK FLUORITE-HF VALUE CHAIN",
+    "file": "assets/images/technology-visuals/arbok-fluorite-hf-value-chain.svg"
+  },
+  {
+    "slug": "arbok-emi-teg-protection-paint",
+    "title": "ARBOK EMI TEG Protection Paint",
+    "file": "assets/images/technology-visuals/arbok-emi-teg-protection-paint.svg"
+  },
+  {
+    "slug": "arbok-digital-twin-adt",
+    "title": "ARBOK Digital Twin (ADT)",
+    "file": "assets/images/technology-visuals/arbok-digital-twin-adt.svg"
+  },
+  {
+    "slug": "arbok-dairy-waste",
+    "title": "ARBOK Dairy Waste",
+    "file": "assets/images/technology-visuals/arbok-dairy-waste.svg"
+  },
+  {
+    "slug": "arbok-critical-materials-recovery-platform",
+    "title": "ARBOK Critical-Materials Recovery (platform)",
+    "file": "assets/images/technology-visuals/arbok-critical-materials-recovery-platform.svg"
+  },
+  {
+    "slug": "arbok-cleansea",
+    "title": "ARBOK CleanSea",
+    "file": "assets/images/technology-visuals/arbok-cleansea.svg"
+  },
+  {
+    "slug": "arbok-anti-mucilage",
+    "title": "ARBOK Anti-Mucilage",
+    "file": "assets/images/technology-visuals/arbok-anti-mucilage.svg"
+  },
+  {
+    "slug": "arbok-anti-bug-arbok-vs-colorado-potato-beetle",
+    "title": "ARBOK Anti-BUG (Arbok vs. Colorado Potato Beetle)",
+    "file": "assets/images/technology-visuals/arbok-anti-bug-arbok-vs-colorado-potato-beetle.svg"
+  },
+  {
+    "slug": "arbiator-teg-super-radiator-for-spacecraft-heat-rejection",
+    "title": "ARBIATOR (TEG Super-Radiator for Spacecraft Heat Rejection)",
+    "file": "assets/images/technology-visuals/arbiator-teg-super-radiator-for-spacecraft-heat-rejection.svg"
+  },
+  {
+    "slug": "aquaspark-electro-erosion-dispersion",
+    "title": "AQUASPARK (ЭЭД — электроэрозионное диспергирование / electro-erosion dispersion)",
+    "file": "assets/images/technology-visuals/aquaspark-electro-erosion-dispersion.svg"
+  },
+  {
+    "slug": "aleyrum",
+    "title": "ALEYRUM",
+    "file": "assets/images/technology-visuals/aleyrum.svg"
+  },
+  {
+    "slug": "alb-icebreaker-arbok-longbattery-icebreaker",
+    "title": "ALB-ICEBREAKER (Arbok LongBattery Icebreaker)",
+    "file": "assets/images/technology-visuals/alb-icebreaker-arbok-longbattery-icebreaker.svg"
+  },
+  {
+    "slug": "aerograph-graphene-aerogel",
+    "title": "AEROGRAPH (Graphene AeroGel)",
+    "file": "assets/images/technology-visuals/aerograph-graphene-aerogel.svg"
+  },
+  {
+    "slug": "aerobatt-binary-battery-for-heavy-machinery",
+    "title": "AEROBATT (BINARY BATTERY for Heavy Machinery)",
+    "file": "assets/images/technology-visuals/aerobatt-binary-battery-for-heavy-machinery.svg"
+  },
+  {
+    "slug": "adbaster",
+    "title": "ADBASTER",
+    "file": "assets/images/technology-visuals/adbaster.svg"
+  },
+  {
+    "slug": "a-reefer-criojet",
+    "title": "A-REEFER (CRIOJET)",
+    "file": "assets/images/technology-visuals/a-reefer-criojet.svg"
+  },
+  {
+    "slug": "3x-ultraviolet-pulse-generator",
+    "title": "3X (Ultraviolet Pulse Generator)",
+    "file": "assets/images/technology-visuals/3x-ultraviolet-pulse-generator.svg"
+  },
+  {
+    "slug": "2cloud",
+    "title": "2CLOUD",
+    "file": "assets/images/technology-visuals/2cloud.svg"
+  },
+  {
+    "slug": "arbok-skymanager",
+    "title": "ARBOK-SkyManager",
+    "file": "assets/images/technology-visuals/arbok-skymanager.svg"
+  },
+  {
+    "slug": "arbok-oily",
+    "title": "ARBOK-Oily",
+    "file": "assets/images/technology-visuals/arbok-oily.svg"
+  },
+  {
+    "slug": "arbok-sapropel",
+    "title": "ARBOK-SAPROPEL",
+    "file": "assets/images/technology-visuals/arbok-sapropel.svg"
+  },
+  {
+    "slug": "arbok-dynamix",
+    "title": "ARBOK-Dynamix",
+    "file": "assets/images/technology-visuals/arbok-dynamix.svg"
+  },
+  {
+    "slug": "arbok-peak",
+    "title": "ARBOK-PEAK",
+    "file": "assets/images/technology-visuals/arbok-peak.svg"
+  },
+  {
+    "slug": "arbok-teg",
+    "title": "ARBOK-TEG",
+    "file": "assets/images/technology-visuals/arbok-teg.svg"
+  },
+  {
+    "slug": "arbok-sotarix",
+    "title": "ARBOK-SOTARIX",
+    "file": "assets/images/technology-visuals/arbok-sotarix.svg"
+  },
+  {
+    "slug": "arbok-space",
+    "title": "ARBOK-Space",
+    "file": "assets/images/technology-visuals/arbok-space.svg"
+  },
+  {
+    "slug": "arbok-newro",
+    "title": "ARBOK-NewRO",
+    "file": "assets/images/technology-visuals/arbok-newro.svg"
+  },
+  {
+    "slug": "arbok-arctic",
+    "title": "ARBOK-Arctic",
+    "file": "assets/images/technology-visuals/arbok-arctic.svg"
+  },
+  {
+    "slug": "arbok-air-alarko-water-based-refrigeration-system",
+    "title": "ARBOK-AIR ALARKO (Water-Based Refrigeration System)",
+    "file": "assets/images/technology-visuals/arbok-air-alarko-water-based-refrigeration-system.svg"
+  },
+  {
+    "slug": "arbok-bottling",
+    "title": "ARBOK-BOTTLING",
+    "file": "assets/images/technology-visuals/arbok-bottling.svg"
+  },
+  {
+    "slug": "arbok-blacksand",
+    "title": "ARBOK-BLACKSAND",
+    "file": "assets/images/technology-visuals/arbok-blacksand.svg"
+  },
+  {
+    "slug": "arbok-crystallizer",
+    "title": "ARBOK-CRYSTALLIZER",
+    "file": "assets/images/technology-visuals/arbok-crystallizer.svg"
+  },
+  {
+    "slug": "arbok-nuke",
+    "title": "ARBOK-NUKE",
+    "file": "assets/images/technology-visuals/arbok-nuke.svg"
+  },
+  {
+    "slug": "arbok-oasis",
+    "title": "ARBOK-OASIS",
+    "file": "assets/images/technology-visuals/arbok-oasis.svg"
+  },
+  {
+    "slug": "arbok-desulph",
+    "title": "ARBOK-DeSulph",
+    "file": "assets/images/technology-visuals/arbok-desulph.svg"
+  },
+  {
+    "slug": "arbok-deuterium-heavy-water-production",
+    "title": "ARBOK-DEUTERIUM (Heavy Water Production)",
+    "file": "assets/images/technology-visuals/arbok-deuterium-heavy-water-production.svg"
+  },
+  {
+    "slug": "arbok-purification",
+    "title": "ARBOK-Purification",
+    "file": "assets/images/technology-visuals/arbok-purification.svg"
+  },
+  {
+    "slug": "arbok-brine-arbok-brine",
+    "title": "ARBOK-Brine (ARBOK-BRINE)",
+    "file": "assets/images/technology-visuals/arbok-brine-arbok-brine.svg"
+  },
+  {
+    "slug": "arbok-desalination",
+    "title": "ARBOK-Desalination",
+    "file": "assets/images/technology-visuals/arbok-desalination.svg"
+  }
+]

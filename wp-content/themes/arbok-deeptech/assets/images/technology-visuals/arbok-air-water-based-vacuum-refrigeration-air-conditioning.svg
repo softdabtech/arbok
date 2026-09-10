@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Arbok-Air (Water-Based Vacuum Refrigeration Air Conditioning) — Air &amp; Climate Control</title>
+  <desc id="desc">Neutral ARBOK technology visual for Arbok-Air (Water-Based Vacuum Refrigeration Air Conditioning) in the Air &amp; Climate Control sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(107)">
+      <stop offset="0%" stop-color="#11283a"/>
+      <stop offset="56%" stop-color="#31627f"/>
+      <stop offset="100%" stop-color="#a8dcef"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 179 C 160 99, 320 259, 560 179 S 940 109, 1280 189" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 255 C 160 175, 320 335, 560 255 S 940 185, 1280 265" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 331 C 160 251, 320 411, 560 331 S 940 261, 1280 341" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 407 C 160 327, 320 487, 560 407 S 940 337, 1280 417" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="853" cy="292" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="853" cy="292" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="869" cy="201" r="5" fill="#ffffff" opacity="0.10"/><circle cx="976" cy="468" r="8" fill="#ffffff" opacity="0.14"/><circle cx="123" cy="175" r="3" fill="#ffffff" opacity="0.17"/><circle cx="230" cy="442" r="6" fill="#ffffff" opacity="0.21"/><circle cx="337" cy="149" r="9" fill="#ffffff" opacity="0.24"/><circle cx="444" cy="416" r="4" fill="#ffffff" opacity="0.10"/><circle cx="551" cy="123" r="7" fill="#ffffff" opacity="0.14"/><circle cx="658" cy="390" r="2" fill="#ffffff" opacity="0.17"/><circle cx="765" cy="97" r="5" fill="#ffffff" opacity="0.21"/><circle cx="872" cy="364" r="8" fill="#ffffff" opacity="0.24"/><circle cx="979" cy="631" r="3" fill="#ffffff" opacity="0.10"/><circle cx="126" cy="338" r="6" fill="#ffffff" opacity="0.14"/><circle cx="233" cy="605" r="9" fill="#ffffff" opacity="0.17"/><circle cx="340" cy="312" r="4" fill="#ffffff" opacity="0.21"/><circle cx="447" cy="579" r="7" fill="#ffffff" opacity="0.24"/><circle cx="554" cy="286" r="2" fill="#ffffff" opacity="0.10"/><circle cx="661" cy="553" r="5" fill="#ffffff" opacity="0.14"/><circle cx="768" cy="260" r="8" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M16 45c18-19 41-18 56 0 11 13 26 13 36 1M20 68c19-13 38-12 52 1 11 10 24 10 34 0M31 90c13-7 27-7 40 0"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">AIR &amp; CLIMATE CONTROL</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">Arbok-Air (Water-Based</text>
+<text x="84" y="490" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">Vacuum Refrigeration Air</text>
+<text x="84" y="550" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">Conditioning)</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>

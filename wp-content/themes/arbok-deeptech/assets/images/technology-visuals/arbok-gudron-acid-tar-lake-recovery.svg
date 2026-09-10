@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">ARBOK-GUDRON (Acid Tar Lake Recovery) — Waste Management</title>
+  <desc id="desc">Neutral ARBOK technology visual for ARBOK-GUDRON (Acid Tar Lake Recovery) in the Waste Management sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(187)">
+      <stop offset="0%" stop-color="#07311f"/>
+      <stop offset="56%" stop-color="#0d6c4f"/>
+      <stop offset="100%" stop-color="#44b88d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 187 C 160 107, 320 267, 560 187 S 940 117, 1280 197" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 263 C 160 183, 320 343, 560 263 S 940 193, 1280 273" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 339 C 160 259, 320 419, 560 339 S 940 269, 1280 349" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 415 C 160 335, 320 495, 560 415 S 940 345, 1280 425" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="857" cy="288" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="857" cy="288" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="1069" cy="401" r="5" fill="#ffffff" opacity="0.10"/><circle cx="656" cy="468" r="8" fill="#ffffff" opacity="0.14"/><circle cx="243" cy="535" r="3" fill="#ffffff" opacity="0.17"/><circle cx="790" cy="602" r="6" fill="#ffffff" opacity="0.21"/><circle cx="377" cy="109" r="9" fill="#ffffff" opacity="0.24"/><circle cx="924" cy="176" r="4" fill="#ffffff" opacity="0.10"/><circle cx="511" cy="243" r="7" fill="#ffffff" opacity="0.14"/><circle cx="1058" cy="310" r="2" fill="#ffffff" opacity="0.17"/><circle cx="645" cy="377" r="5" fill="#ffffff" opacity="0.21"/><circle cx="232" cy="444" r="8" fill="#ffffff" opacity="0.24"/><circle cx="779" cy="511" r="3" fill="#ffffff" opacity="0.10"/><circle cx="366" cy="578" r="6" fill="#ffffff" opacity="0.14"/><circle cx="913" cy="645" r="9" fill="#ffffff" opacity="0.17"/><circle cx="500" cy="152" r="4" fill="#ffffff" opacity="0.21"/><circle cx="1047" cy="219" r="7" fill="#ffffff" opacity="0.24"/><circle cx="634" cy="286" r="2" fill="#ffffff" opacity="0.10"/><circle cx="221" cy="353" r="5" fill="#ffffff" opacity="0.14"/><circle cx="768" cy="420" r="8" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M24 30h56M31 30l5 58h32l5-58M39 22h26l4 8H35zM44 42v34M60 42v34"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">WASTE MANAGEMENT</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">ARBOK-GUDRON (Acid Tar</text>
+<text x="84" y="490" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">Lake Recovery)</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>

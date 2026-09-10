@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">AEROGRAPH (Graphene AeroGel) — Energy Production</title>
+  <desc id="desc">Neutral ARBOK technology visual for AEROGRAPH (Graphene AeroGel) in the Energy Production sector.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(100)">
+      <stop offset="0%" stop-color="#182642"/>
+      <stop offset="56%" stop-color="#014387"/>
+      <stop offset="100%" stop-color="#6fb7ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="68%" cy="24%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".30"/>
+      <stop offset="52%" stop-color="#75d8f1" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#001a33" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)" opacity=".95"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g opacity=".92"><path d="M-80 172 C 160 92, 320 252, 560 172 S 940 102, 1280 182" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.08"/><path d="M-55 248 C 160 168, 320 328, 560 248 S 940 178, 1280 258" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.12"/><path d="M-30 324 C 160 244, 320 404, 560 324 S 940 254, 1280 334" fill="none" stroke="#ffffff" stroke-width="2.0" opacity="0.15"/><path d="M-5 400 C 160 320, 320 480, 560 400 S 940 330, 1280 410" fill="none" stroke="#ffffff" stroke-width="2.4000000000000004" opacity="0.18"/></g>
+  <circle cx="866" cy="279" r="250" fill="none" stroke="#ffffff" stroke-opacity=".20" stroke-width="2"/>
+  <circle cx="866" cy="279" r="152" fill="none" stroke="#ffffff" stroke-opacity=".13" stroke-width="32"/>
+  <g><circle cx="220" cy="550" r="6" fill="#ffffff" opacity="0.10"/><circle cx="920" cy="370" r="9" fill="#ffffff" opacity="0.14"/><circle cx="660" cy="190" r="4" fill="#ffffff" opacity="0.17"/><circle cx="400" cy="570" r="7" fill="#ffffff" opacity="0.21"/><circle cx="140" cy="390" r="2" fill="#ffffff" opacity="0.24"/><circle cx="840" cy="210" r="5" fill="#ffffff" opacity="0.10"/><circle cx="580" cy="590" r="8" fill="#ffffff" opacity="0.14"/><circle cx="320" cy="410" r="3" fill="#ffffff" opacity="0.17"/><circle cx="1020" cy="230" r="6" fill="#ffffff" opacity="0.21"/><circle cx="760" cy="610" r="9" fill="#ffffff" opacity="0.24"/><circle cx="500" cy="430" r="4" fill="#ffffff" opacity="0.10"/><circle cx="240" cy="250" r="7" fill="#ffffff" opacity="0.14"/><circle cx="940" cy="630" r="2" fill="#ffffff" opacity="0.17"/><circle cx="680" cy="450" r="5" fill="#ffffff" opacity="0.21"/><circle cx="420" cy="270" r="8" fill="#ffffff" opacity="0.24"/><circle cx="160" cy="90" r="3" fill="#ffffff" opacity="0.10"/><circle cx="860" cy="470" r="6" fill="#ffffff" opacity="0.14"/><circle cx="600" cy="290" r="9" fill="#ffffff" opacity="0.17"/></g>
+  <g transform="translate(856 154) scale(2.25)" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".72" filter="url(#shadow)">
+    <path d="M55 6 24 58h25l-7 50 38-61H56z"/>
+  </g>
+  <rect x="84" y="82" width="320" height="46" rx="23" fill="#ffffff" opacity=".11" stroke="#ffffff" stroke-opacity=".22"/>
+  <text x="108" y="112" fill="#d8f5ff" font-size="18" font-weight="800" letter-spacing="3" font-family="Manrope, Arial, sans-serif">ENERGY PRODUCTION</text>
+  <text x="84" y="430" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">AEROGRAPH (Graphene</text>
+<text x="84" y="490" fill="#ffffff" font-size="54" font-weight="800" font-family="Manrope, Arial, sans-serif">AeroGel)</text>
+  <text x="86" y="664" fill="#c8e5f0" font-size="19" font-weight="800" letter-spacing="4" font-family="Manrope, Arial, sans-serif">STRATEGIC RESEARCH INSTITUTE ARBOK</text>
+  <line x1="84" y1="690" x2="1116" y2="690" stroke="#ffffff" stroke-opacity=".22"/>
+</svg>
