@@ -399,7 +399,7 @@ function arbok_technology_image_url(string $slug): string {
             return $url;
         }
     }
-    return arbok_media_url('Technologies', arbok_media_url('Technology Blue', ''));
+    return '';
 }
 
 function arbok_technology_visual_fallback(int $post_id = 0, string $context = 'card'): void {
