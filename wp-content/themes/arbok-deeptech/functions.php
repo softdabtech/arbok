@@ -642,6 +642,36 @@ function arbok_hidden_team_ids(): array {
     return $ids;
 }
 
+function arbok_sort_team_members(array $members): array {
+    $priority = [
+        'michael-vischmidt' => 0,
+        'dmitry-ponomarenko' => 1,
+        'hisham-zireeni' => 9000,
+    ];
+
+    $original_index = [];
+    foreach ($members as $index => $member) {
+        if ($member instanceof WP_Post) {
+            $original_index[$member->ID] = $index;
+        }
+    }
+
+    usort($members, static function ($a, $b) use ($priority, $original_index): int {
+        $slug_a = $a instanceof WP_Post ? (string) $a->post_name : '';
+        $slug_b = $b instanceof WP_Post ? (string) $b->post_name : '';
+        $rank_a = $priority[$slug_a] ?? (100 + ($original_index[$a->ID] ?? 0));
+        $rank_b = $priority[$slug_b] ?? (100 + ($original_index[$b->ID] ?? 0));
+
+        if ($rank_a === $rank_b) {
+            return strcasecmp((string) $a->post_title, (string) $b->post_title);
+        }
+
+        return $rank_a <=> $rank_b;
+    });
+
+    return $members;
+}
+
 function arbok_hide_legacy_team_member(): void {
     if (is_singular('team_member') && get_post_field('post_name') === 'mohamed-zayed') {
         wp_safe_redirect(get_post_type_archive_link('team_member'), 301);
