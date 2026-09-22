@@ -672,6 +672,15 @@ function arbok_sort_team_members(array $members): array {
     return $members;
 }
 
+function arbok_format_team_member_title(string $title, int $post_id = 0): string {
+    if ($post_id && get_post_type($post_id) === 'team_member' && get_post_field('post_name', $post_id) === 'alex-bombela') {
+        return str_replace('Hr.Dr. Alex Bombela', 'Hr. Alex Bombela', $title);
+    }
+
+    return $title;
+}
+add_filter('the_title', 'arbok_format_team_member_title', 10, 2);
+
 function arbok_hide_legacy_team_member(): void {
     if (is_singular('team_member') && get_post_field('post_name') === 'mohamed-zayed') {
         wp_safe_redirect(get_post_type_archive_link('team_member'), 301);
