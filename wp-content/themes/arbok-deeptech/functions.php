@@ -23,6 +23,25 @@ function arbok_assets(): void {
 add_action('wp_enqueue_scripts', 'arbok_assets');
 
 function arbok_document_meta(): void {
+    if (function_exists('arbok_is_critical_metals_book') && arbok_is_critical_metals_book()) {
+        $description = 'Critical Metals: A New Strategic Approach by Michael Vischmidt from the ARBOK Strategic Research Institute. Kindle edition on critical elements, dissolved resources and surface recovery economics.';
+        $image = get_template_directory_uri() . '/assets/images/book/critical-metals-book.jpeg';
+        echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
+        echo '<link rel="canonical" href="' . esc_url(home_url('/critical-metals-book/')) . '">' . "\n";
+        echo '<meta property="og:title" content="Critical Metals: A New Strategic Approach | ARBOK">' . "\n";
+        echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
+        echo '<meta property="og:type" content="book">' . "\n";
+        echo '<meta property="og:url" content="' . esc_url(home_url('/critical-metals-book/')) . '">' . "\n";
+        echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        $schema = ['@context' => 'https://schema.org', '@graph' => [
+            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo.png', 'email' => 'info@arbok.tech'],
+            ['@type' => 'Book', '@id' => home_url('/critical-metals-book/#book'), 'name' => 'Critical Metals: A New Strategic Approach', 'author' => ['@type' => 'Person', 'name' => 'Michael Vischmidt'], 'publisher' => ['@id' => home_url('/#organization')], 'bookFormat' => 'https://schema.org/EBook', 'inLanguage' => 'en', 'url' => home_url('/critical-metals-book/'), 'image' => $image, 'description' => $description, 'sameAs' => 'https://www.amazon.com/dp/B0HJ5S55Q8'],
+            ['@type' => 'WebPage', '@id' => home_url('/critical-metals-book/#webpage'), 'url' => home_url('/critical-metals-book/'), 'name' => 'Critical Metals: A New Strategic Approach', 'description' => $description, 'publisher' => ['@id' => home_url('/#organization')]],
+        ]];
+        echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+        return;
+    }
     if (function_exists('arbok_is_terms_of_use') && arbok_is_terms_of_use()) {
         $description = 'Terms of Use for the ARBOK website, including website access, informational materials, intellectual property, submissions, disclaimers and limitations of liability.';
         echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
@@ -258,7 +277,15 @@ function arbok_is_terms_of_use(): bool {
     return $path === 'terms-of-use';
 }
 
+function arbok_is_critical_metals_book(): bool {
+    $path = trim((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    return $path === 'critical-metals-book';
+}
+
 add_filter('pre_get_document_title', function ($title) {
+    if (arbok_is_critical_metals_book()) {
+        return 'Critical Metals: A New Strategic Approach | ARBOK';
+    }
     if (arbok_is_terms_of_use()) {
         return 'Terms of Use | ARBOK';
     }
@@ -289,6 +316,20 @@ function arbok_render_terms_of_use(): void {
     exit;
 }
 add_action('template_redirect', 'arbok_render_terms_of_use', 1);
+
+function arbok_render_critical_metals_book(): void {
+    if (!arbok_is_critical_metals_book()) {
+        return;
+    }
+    global $wp_query;
+    if ($wp_query) {
+        $wp_query->is_404 = false;
+    }
+    status_header(200);
+    include get_template_directory() . '/page-critical-metals-book.php';
+    exit;
+}
+add_action('template_redirect', 'arbok_render_critical_metals_book', 1);
 
 function arbok_render_density_doctrine(): void {
     if (!arbok_is_density_doctrine()) {
@@ -626,6 +667,7 @@ function arbok_header_menu(): void {
         'Water' => home_url('/water-solutions/'),
         'Directions' => home_url('/directions/'),
         'Doctrine' => home_url('/density-doctrine/'),
+        'Book' => home_url('/critical-metals-book/'),
         'About' => home_url('/about-arbok/'),
         'Team' => get_post_type_archive_link('team_member'),
         'Blog' => get_post_type_archive_link('update'),
@@ -643,6 +685,7 @@ function arbok_menu_fallback(): void {
         'Water' => home_url('/water-solutions/'),
         'Directions' => home_url('/directions/'),
         'Doctrine' => home_url('/density-doctrine/'),
+        'Book' => home_url('/critical-metals-book/'),
         'About' => home_url('/about-arbok/'),
         'Team' => get_post_type_archive_link('team_member'),
         'Blog' => get_post_type_archive_link('update'),

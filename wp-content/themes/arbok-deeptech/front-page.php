@@ -34,6 +34,24 @@ $features_image = arbok_media_url('ARBOK Tech Features 02');
     </div>
 </section>
 
+<section class="section book-home">
+    <div class="shell book-home__grid">
+        <figure class="book-home__media">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/book/critical-metals-book.jpeg'); ?>" alt="Critical Metals: A New Strategic Approach by Michael Vischmidt">
+        </figure>
+        <div class="book-home__copy">
+            <p class="eyebrow dark">New book from ARBOK Institute</p>
+            <h2>Critical Metals: A New Strategic Approach</h2>
+            <p>52 critical elements — from lithium and vanadium to rhenium and the rare earths — and for each one the same question: where is it already dissolved, who is already paying to bury it, and what is that stream worth once the metal comes out of it?</p>
+            <p>By 2035 the world needs roughly <strong>$400 billion</strong> of critical metals. About <strong>$30 billion</strong> is committed to new mines. That gap does not close underground.</p>
+            <div class="button-row">
+                <a class="button button-dark" href="<?php echo esc_url(home_url('/critical-metals-book/')); ?>">Explore the book</a>
+                <a class="text-link" href="https://www.amazon.com/dp/B0HJ5S55Q8" target="_blank" rel="noopener sponsored">Kindle edition on Amazon <span>↗</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section directions-home">
     <div class="shell">
         <div class="section-heading"><div><p class="eyebrow dark">Strategic directions</p><h2>Four priorities. One connected technology portfolio.</h2></div><a class="text-link" href="<?php echo esc_url(home_url('/directions/')); ?>">Explore all directions <span>↗</span></a></div>
