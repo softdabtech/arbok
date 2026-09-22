@@ -25,6 +25,7 @@ foreach ($members as $member) {
 }
 
 $render_team_group = static function (string $group_name, array $group_members): void {
+    global $post;
     ?>
     <section class="section team-group">
         <div class="shell">
