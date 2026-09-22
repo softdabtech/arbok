@@ -37,7 +37,7 @@ $features_image = arbok_media_url('ARBOK Tech Features 02');
 <section class="section book-home">
     <div class="shell book-home__grid">
         <figure class="book-home__media">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/book/critical-metals-book.jpeg'); ?>" alt="Critical Metals: A New Strategic Approach by Michael Vischmidt">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/book/critical-metals-book.svg'); ?>" alt="Critical Metals: A New Strategic Approach by Michael Vischmidt">
         </figure>
         <div class="book-home__copy">
             <p class="eyebrow dark">New book from ARBOK Institute</p>

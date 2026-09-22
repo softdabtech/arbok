@@ -1,6 +1,6 @@
 <?php
 get_header();
-$book_image = get_template_directory_uri() . '/assets/images/book/critical-metals-book.jpeg';
+$book_image = get_template_directory_uri() . '/assets/images/book/critical-metals-book.svg';
 $amazon_url = 'https://www.amazon.com/dp/B0HJ5S55Q8';
 ?>
 <section class="book-hero">

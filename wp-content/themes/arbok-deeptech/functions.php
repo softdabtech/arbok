@@ -25,7 +25,7 @@ add_action('wp_enqueue_scripts', 'arbok_assets');
 function arbok_document_meta(): void {
     if (function_exists('arbok_is_critical_metals_book') && arbok_is_critical_metals_book()) {
         $description = 'Critical Metals: A New Strategic Approach by Michael Vischmidt from the ARBOK Strategic Research Institute. Kindle edition on critical elements, dissolved resources and surface recovery economics.';
-        $image = get_template_directory_uri() . '/assets/images/book/critical-metals-book.jpeg';
+        $image = get_template_directory_uri() . '/assets/images/book/critical-metals-book.svg';
         echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
         echo '<link rel="canonical" href="' . esc_url(home_url('/critical-metals-book/')) . '">' . "\n";
         echo '<meta property="og:title" content="Critical Metals: A New Strategic Approach | ARBOK">' . "\n";
