@@ -111,4 +111,5 @@ $features_image = arbok_media_url('ARBOK Tech Features 02');
 </section>
 
 <section class="section contact-cta"><div class="shell contact-cta__inner"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt=""><div><p class="eyebrow">Technology, investment and deployment</p><h2>Start a focused conversation with ARBOK.</h2><div class="button-row"><a class="button" href="<?php echo esc_url(home_url('/contact/')); ?>">Contact ARBOK</a><a class="text-link light" href="mailto:info@arbok.tech">info@arbok.tech <span>↗</span></a></div></div></div></section>
+<?php get_template_part('template-parts/home-global-presence'); ?>
 <?php get_footer(); ?>
