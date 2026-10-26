@@ -144,7 +144,11 @@ function arbok_document_meta(): void {
     echo '<meta property="og:title" content="' . esc_attr(wp_get_document_title()) . '">' . "\n";
     echo '<meta property="og:type" content="' . (is_singular() ? 'article' : 'website') . '">' . "\n";
     echo '<meta property="og:url" content="' . esc_url((is_singular() ? get_permalink() : home_url(add_query_arg([], $GLOBALS['wp']->request ?? '')))) . '">' . "\n";
-    $image = is_singular() && has_post_thumbnail() ? get_the_post_thumbnail_url(null, 'large') : get_template_directory_uri() . '/assets/images/arbok-logo.png';
+    if (is_singular('team_member')) {
+        $image = arbok_team_member_portrait_url(get_queried_object_id(), 'large');
+    } else {
+        $image = is_singular() && has_post_thumbnail() ? get_the_post_thumbnail_url(null, 'large') : get_template_directory_uri() . '/assets/images/arbok-logo.png';
+    }
     echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
     echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
     if (wp_get_environment_type() === 'local' || in_array(wp_parse_url(home_url(), PHP_URL_HOST), ['127.0.0.1', 'localhost'], true)) {
@@ -616,6 +620,7 @@ function arbok_repair_primary_menu_links(array $items, object $args): array {
         'Sectors' => home_url('/directions/'),
         'About ARBOK' => home_url('/about-arbok/'),
         'Team' => get_post_type_archive_link('team_member'),
+        'Media' => home_url('/media/'),
         'Blog' => get_post_type_archive_link('update'),
         'News / Updates' => get_post_type_archive_link('update'),
     ];
@@ -681,6 +686,49 @@ function arbok_format_team_member_title(string $title, int $post_id = 0): string
 }
 add_filter('the_title', 'arbok_format_team_member_title', 10, 2);
 
+function arbok_team_member_portrait_url(int $post_id = 0, string $size = 'large'): string {
+    $post_id = $post_id ?: (int) get_the_ID();
+    $slug = (string) get_post_field('post_name', $post_id);
+
+    if ($slug === 'alex-bombela') {
+        return get_template_directory_uri() . '/assets/images/team/alex-bombela.webp';
+    }
+
+    if (has_post_thumbnail($post_id)) {
+        return (string) get_the_post_thumbnail_url($post_id, $size);
+    }
+
+    return get_template_directory_uri() . '/assets/images/arbok-logo.png';
+}
+
+function arbok_team_member_portrait(int $post_id = 0, string $size = 'medium_large', bool $eager = false): void {
+    $post_id = $post_id ?: (int) get_the_ID();
+    $slug = (string) get_post_field('post_name', $post_id);
+    $alt = get_the_title($post_id);
+
+    if ($slug === 'alex-bombela') {
+        printf(
+            '<img src="%s" alt="%s" width="1200" height="1200" loading="%s" decoding="async"%s>',
+            esc_url(arbok_team_member_portrait_url($post_id, $size)),
+            esc_attr($alt),
+            $eager ? 'eager' : 'lazy',
+            $eager ? ' fetchpriority="high"' : ''
+        );
+        return;
+    }
+
+    if (has_post_thumbnail($post_id)) {
+        echo get_the_post_thumbnail($post_id, $size, [
+            'alt' => $alt,
+            'loading' => $eager ? 'eager' : 'lazy',
+            'fetchpriority' => $eager ? 'high' : 'auto',
+        ]);
+        return;
+    }
+
+    printf('<img src="%s" alt="" loading="lazy" decoding="async">', esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'));
+}
+
 function arbok_hide_legacy_team_member(): void {
     if (is_singular('team_member') && get_post_field('post_name') === 'mohamed-zayed') {
         wp_safe_redirect(get_post_type_archive_link('team_member'), 301);
@@ -701,40 +749,62 @@ add_action('pre_get_posts', 'arbok_team_archive_order');
 
 
 function arbok_header_menu(): void {
-    $items = [
-        'Technologies' => get_post_type_archive_link('technology'),
-        'Water' => home_url('/water-solutions/'),
-        'Directions' => home_url('/directions/'),
-        'Doctrine' => home_url('/density-doctrine/'),
-        'Book' => home_url('/critical-metals-book/'),
-        'About' => home_url('/about-arbok/'),
-        'Team' => get_post_type_archive_link('team_member'),
-        'Blog' => get_post_type_archive_link('update'),
-    ];
     echo '<ul class="nav-list nav-list--header">';
-    foreach ($items as $label => $url) {
-        printf('<li><a href="%s">%s</a></li>', esc_url($url), esc_html($label));
-    }
+
+    printf('<li><a href="%s">Technologies</a></li>', esc_url(get_post_type_archive_link('technology')));
+
+    echo '<li class="menu-item-has-children">';
+    printf('<a href="%s" aria-haspopup="true">Directions</a>', esc_url(home_url('/directions/')));
+    echo '<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="directions-submenu"><span aria-hidden="true">⌄</span><span class="screen-reader-text">Toggle Directions submenu</span></button>';
+    echo '<ul id="directions-submenu" class="sub-menu">';
+    printf('<li><a href="%s">Water</a></li>', esc_url(home_url('/water-solutions/')));
+    echo '</ul></li>';
+
+    echo '<li class="menu-item-has-children">';
+    printf('<a href="%s" aria-haspopup="true">About</a>', esc_url(home_url('/about-arbok/')));
+    echo '<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="about-submenu"><span aria-hidden="true">⌄</span><span class="screen-reader-text">Toggle About submenu</span></button>';
+    echo '<ul id="about-submenu" class="sub-menu">';
+    printf('<li><a href="%s">Doctrine</a></li>', esc_url(home_url('/density-doctrine/')));
+    printf('<li><a href="%s">Book</a></li>', esc_url(home_url('/critical-metals-book/')));
+    printf('<li><a href="%s">Team</a></li>', esc_url(get_post_type_archive_link('team_member')));
+    printf('<li><a href="%s">Media</a></li>', esc_url(home_url('/media/')));
+    echo '</ul></li>';
+
+    printf('<li><a href="%s">Blog</a></li>', esc_url(get_post_type_archive_link('update')));
     echo '</ul>';
 }
 
 function arbok_menu_fallback(): void {
-    $items = [
-        'Technologies' => get_post_type_archive_link('technology'),
-        'Water' => home_url('/water-solutions/'),
-        'Directions' => home_url('/directions/'),
-        'Doctrine' => home_url('/density-doctrine/'),
-        'Book' => home_url('/critical-metals-book/'),
-        'About' => home_url('/about-arbok/'),
-        'Team' => get_post_type_archive_link('team_member'),
-        'Blog' => get_post_type_archive_link('update'),
-    ];
-    echo '<ul class="nav-list">';
-    foreach ($items as $label => $url) {
-        printf('<li><a href="%s">%s</a></li>', esc_url($url), esc_html($label));
-    }
-    echo '</ul>';
+    arbok_header_menu();
 }
+
+function arbok_ensure_media_page(): void {
+    if (get_option('arbok_media_page_ready_v1')) {
+        return;
+    }
+
+    $page = get_page_by_path('media', OBJECT, 'page');
+    $page_id = $page instanceof WP_Post ? (int) $page->ID : 0;
+
+    if (!$page_id) {
+        $page_id = wp_insert_post([
+            'post_type' => 'page',
+            'post_status' => 'publish',
+            'post_title' => 'Media',
+            'post_name' => 'media',
+            'post_content' => '<!-- wp:paragraph {"className":"media-page__intro"} --><p class="media-page__intro">Official photography from ARBOK projects, research, events and institutional activities.</p><!-- /wp:paragraph -->',
+        ], true);
+    }
+
+    if (is_wp_error($page_id) || !$page_id) {
+        return;
+    }
+
+    update_post_meta((int) $page_id, '_wp_page_template', 'page-media.php');
+    update_post_meta((int) $page_id, '_arbok_meta_description', 'Official ARBOK media library featuring project, research, event and institutional photography.');
+    update_option('arbok_media_page_ready_v1', (int) $page_id, false);
+}
+add_action('init', 'arbok_ensure_media_page', 30);
 
 function arbok_contact_spam_fields(): void {
     $issued_at = time();

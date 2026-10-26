@@ -43,11 +43,7 @@ $render_team_group = static function (string $group_name, array $group_members):
                     ?>
                     <article class="person-card person-card--<?php echo esc_attr($member_slug); ?>">
                         <a class="person-media" href="<?php the_permalink(); ?>">
-                            <?php if (has_post_thumbnail()) : ?>
-                                <?php the_post_thumbnail('medium_large', ['alt' => get_the_title()]); ?>
-                            <?php else : ?>
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="">
-                            <?php endif; ?>
+                            <?php arbok_team_member_portrait(get_the_ID(), 'medium_large'); ?>
                         </a>
                         <div>
                             <p class="card-meta"><?php echo esc_html($group_name); ?></p>
