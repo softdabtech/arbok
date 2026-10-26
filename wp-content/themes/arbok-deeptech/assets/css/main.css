@@ -599,8 +599,10 @@ body:has(.water-hero),body:has(.water-detail-hero){overflow-x:hidden}
 .nav-list--header>li{position:relative}
 .nav-list--header>.menu-item-has-children{display:flex;align-items:center;gap:3px}
 .submenu-toggle{display:inline-flex;align-items:center;justify-content:center;width:24px;height:28px;padding:0;border:0;background:transparent;color:#365065;cursor:pointer}
-.submenu-toggle>span[aria-hidden="true"]{display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;font-size:0;line-height:0;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}
-.menu-item-has-children.submenu-open>.submenu-toggle>span[aria-hidden="true"]{transform:translateY(2px) rotate(225deg)}
+.submenu-toggle>span[aria-hidden="true"]{position:relative;display:block;width:12px;height:12px;font-size:0;line-height:0}
+.submenu-toggle>span[aria-hidden="true"]:before,.submenu-toggle>span[aria-hidden="true"]:after{content:"";position:absolute;top:5px;left:1px;width:10px;height:1.5px;border-radius:2px;background:currentColor;transition:transform .2s ease}
+.submenu-toggle>span[aria-hidden="true"]:after{transform:rotate(90deg)}
+.menu-item-has-children.submenu-open>.submenu-toggle>span[aria-hidden="true"]:after{transform:rotate(90deg) scaleX(0)}
 .sub-menu{position:absolute;z-index:80;top:calc(100% + 18px);left:-18px;display:grid;min-width:205px;margin:0;padding:10px;list-style:none;border:1px solid #d8e4ec;border-radius:14px;background:rgba(255,255,255,.99);box-shadow:0 22px 55px rgba(2,35,66,.16);opacity:0;visibility:hidden;transform:translateY(-7px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}
 .sub-menu:before{content:"";position:absolute;left:0;right:0;top:-19px;height:19px}
 .sub-menu li{width:100%}
