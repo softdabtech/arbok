@@ -66,6 +66,16 @@ $total_technologies = (int) (wp_count_posts('technology')->publish ?? 0);
     </div>
 </section>
 
+<section class="desal-calculator-promo" aria-labelledby="desal-calculator-promo-title">
+    <div class="shell desal-calculator-promo__inner">
+        <div class="desal-calculator-promo__icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img"><path d="M32 5c9 13 18 23 18 34a18 18 0 1 1-36 0C14 28 23 18 32 5Z"/><path d="M23 40c2 5 5 7 10 8"/><path d="M39 26v13M33 32h12"/></svg>
+        </div>
+        <div class="desal-calculator-promo__copy"><p class="eyebrow">Interactive desalination calculator</p><h2 id="desal-calculator-promo-title">Model an ARBOK zero-liquid-discharge system.</h2><p>Set source-water conditions and drinking-water demand to estimate intake, dry salt recovery, installed power and operating economics against conventional reverse osmosis.</p></div>
+        <a class="button desal-calculator-promo__button" href="<?php echo esc_url(home_url('/desal-calculator/')); ?>">Open desalination calculator <span>↗</span></a>
+    </div>
+</section>
+
 <section class="section sectors-showcase">
     <div class="shell">
         <div class="section-heading"><div><p class="eyebrow dark">Technology sectors</p><h2>Essential systems portfolio</h2></div><a class="text-link" href="<?php echo esc_url(get_post_type_archive_link('sector')); ?>">Explore sectors <span>↗</span></a></div>

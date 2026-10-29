@@ -650,3 +650,16 @@ body:has(.water-hero),body:has(.water-detail-hero){overflow-x:hidden}
   .media-library__heading{margin-bottom:30px}
   .media-empty-state{min-height:340px;padding:38px 18px;border-radius:18px}
 }
+
+/* Desalination calculator homepage entry */
+.desal-calculator-promo{position:relative;overflow:hidden;padding:34px 0;background:linear-gradient(110deg,#031525 0%,#064878 62%,#087b96 100%);color:#fff}
+.desal-calculator-promo:before{content:"";position:absolute;right:-90px;top:-190px;width:470px;height:470px;border:1px solid rgba(255,255,255,.12);border-radius:50%;box-shadow:0 0 0 54px rgba(255,255,255,.025),0 0 0 112px rgba(255,255,255,.02)}
+.desal-calculator-promo__inner{position:relative;display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:28px;align-items:center}
+.desal-calculator-promo__icon{display:grid;place-items:center;width:72px;height:72px;border:1px solid rgba(255,255,255,.22);border-radius:20px;background:rgba(255,255,255,.08)}
+.desal-calculator-promo__icon svg{width:42px;height:42px;fill:none;stroke:#77d9ef;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.desal-calculator-promo__copy .eyebrow{margin-bottom:6px;color:#7bdcf2}
+.desal-calculator-promo__copy h2{margin:0;color:#fff;font-size:clamp(1.45rem,2.5vw,2.25rem);letter-spacing:-.04em}
+.desal-calculator-promo__copy p:last-child{max-width:790px;margin:7px 0 0;color:#c9dce7;font-size:.94rem}
+.desal-calculator-promo__button{white-space:nowrap;background:#fff!important;color:#014387!important}
+@media(max-width:850px){.desal-calculator-promo__inner{grid-template-columns:60px minmax(0,1fr)}.desal-calculator-promo__icon{width:60px;height:60px;border-radius:17px}.desal-calculator-promo__button{grid-column:2;justify-self:start}}
+@media(max-width:650px){.desal-calculator-promo{padding:28px 0}.desal-calculator-promo__inner{grid-template-columns:1fr;gap:18px}.desal-calculator-promo__icon{width:54px;height:54px}.desal-calculator-promo__button{grid-column:1;width:100%;justify-self:stretch}.desal-calculator-promo__copy p:last-child{font-size:.88rem}}

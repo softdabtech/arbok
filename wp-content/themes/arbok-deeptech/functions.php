@@ -23,6 +23,12 @@ function arbok_assets(): void {
         'ajaxUrl' => admin_url('admin-ajax.php'),
         'contactProofAction' => 'arbok_contact_proof',
     ]);
+    if (function_exists('arbok_is_desal_calculator') && arbok_is_desal_calculator()) {
+        $calculator_css = get_template_directory() . '/assets/css/desal-calculator.css';
+        $calculator_js = get_template_directory() . '/assets/js/desal-calculator.js';
+        wp_enqueue_style('arbok-desal-calculator', get_template_directory_uri() . '/assets/css/desal-calculator.css', ['arbok-main'], (string) filemtime($calculator_css));
+        wp_enqueue_script('arbok-desal-calculator', get_template_directory_uri() . '/assets/js/desal-calculator.js', [], (string) filemtime($calculator_js), true);
+    }
 }
 add_action('wp_enqueue_scripts', 'arbok_assets');
 
@@ -47,6 +53,35 @@ function arbok_frontend_cleanup(): void {
 add_action('init', 'arbok_frontend_cleanup');
 
 function arbok_document_meta(): void {
+    if (function_exists('arbok_is_desal_calculator') && arbok_is_desal_calculator()) {
+        remove_action('wp_head', 'rel_canonical');
+        $title = 'ARBOK Desalination Calculator | ZLD System Estimate';
+        $description = 'Estimate ARBOK zero-liquid-discharge desalination output, dry salt recovery, energy demand and operating economics compared with reverse osmosis.';
+        $url = home_url('/desal-calculator/');
+        $image = get_template_directory_uri() . '/assets/images/arbok-logo.png';
+        echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
+        echo '<meta name="robots" content="index,follow,max-image-preview:large">' . "\n";
+        echo '<link rel="canonical" href="' . esc_url($url) . '">' . "\n";
+        echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
+        echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
+        echo '<meta property="og:type" content="website">' . "\n";
+        echo '<meta property="og:url" content="' . esc_url($url) . '">' . "\n";
+        echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
+        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        echo '<meta name="twitter:title" content="' . esc_attr($title) . '">' . "\n";
+        echo '<meta name="twitter:description" content="' . esc_attr($description) . '">' . "\n";
+        $schema = ['@context' => 'https://schema.org', '@graph' => [
+            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => $image, 'email' => 'info@arbok.tech'],
+            ['@type' => 'WebPage', '@id' => $url . '#webpage', 'url' => $url, 'name' => $title, 'description' => $description, 'inLanguage' => 'en', 'isPartOf' => ['@id' => home_url('/#website')], 'about' => ['@id' => $url . '#calculator'], 'publisher' => ['@id' => home_url('/#organization')]],
+            ['@type' => 'SoftwareApplication', '@id' => $url . '#calculator', 'name' => 'ARBOK Desalination Calculator', 'url' => $url, 'applicationCategory' => 'BusinessApplication', 'applicationSubCategory' => 'Desalination planning calculator', 'operatingSystem' => 'Web', 'isAccessibleForFree' => true, 'description' => $description, 'publisher' => ['@id' => home_url('/#organization')]],
+            ['@type' => 'BreadcrumbList', '@id' => $url . '#breadcrumb', 'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => home_url('/')],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => 'Desalination Calculator', 'item' => $url],
+            ]],
+        ]];
+        echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+        return;
+    }
     if (function_exists('arbok_is_critical_metals_book') && arbok_is_critical_metals_book()) {
         $description = 'Critical Metals: A New Strategic Approach by Michael Vischmidt from the ARBOK Strategic Research Institute. Kindle edition on critical elements, dissolved resources and surface recovery economics.';
         $image = get_template_directory_uri() . '/assets/images/book/critical-metals-book.svg';
@@ -293,7 +328,15 @@ function arbok_is_critical_metals_book(): bool {
     return $path === 'critical-metals-book';
 }
 
+function arbok_is_desal_calculator(): bool {
+    $path = trim((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    return $path === 'desal-calculator';
+}
+
 add_filter('pre_get_document_title', function ($title) {
+    if (arbok_is_desal_calculator()) {
+        return 'ARBOK Desalination Calculator | ZLD System Estimate';
+    }
     if (arbok_is_critical_metals_book()) {
         return 'Critical Metals: A New Strategic Approach | ARBOK';
     }
@@ -313,6 +356,25 @@ add_filter('pre_get_document_title', function ($title) {
     }
     return $title;
 }, 30);
+
+function arbok_render_desal_calculator(): void {
+    if (!arbok_is_desal_calculator()) {
+        return;
+    }
+    $request_path = (string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
+    if ($request_path !== trailingslashit($request_path)) {
+        wp_safe_redirect(home_url('/desal-calculator/'), 301);
+        exit;
+    }
+    global $wp_query;
+    if ($wp_query) {
+        $wp_query->is_404 = false;
+    }
+    status_header(200);
+    include get_template_directory() . '/page-desal-calculator.php';
+    exit;
+}
+add_action('template_redirect', 'arbok_render_desal_calculator', 1);
 
 function arbok_render_terms_of_use(): void {
     if (!arbok_is_terms_of_use()) {
@@ -636,6 +698,7 @@ function arbok_repair_primary_menu_links(array $items, object $args): array {
         'Water' => home_url('/water-solutions/'),
         'Water Solutions' => home_url('/water-solutions/'),
         'Directions' => home_url('/directions/'),
+        'Calculator' => home_url('/desal-calculator/'),
         'Doctrine' => home_url('/density-doctrine/'),
         'Sectors' => home_url('/directions/'),
         'About ARBOK' => home_url('/about-arbok/'),
@@ -796,6 +859,8 @@ function arbok_header_menu(): void {
     printf('<li><a href="%s">Water</a></li>', esc_url(home_url('/water-solutions/')));
     echo '</ul></li>';
 
+    printf('<li><a href="%s">Calculator</a></li>', esc_url(home_url('/desal-calculator/')));
+
     echo '<li class="menu-item-has-children">';
     printf('<a href="%s" aria-haspopup="true">About</a>', esc_url(home_url('/about-arbok/')));
     echo '<button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="about-submenu"><span aria-hidden="true">⌄</span><span class="screen-reader-text">Toggle About submenu</span></button>';
@@ -841,6 +906,34 @@ function arbok_ensure_media_page(): void {
     update_option('arbok_media_page_ready_v1', (int) $page_id, false);
 }
 add_action('init', 'arbok_ensure_media_page', 30);
+
+function arbok_ensure_desal_calculator_page(): void {
+    if (get_option('arbok_desal_calculator_page_ready_v1')) {
+        return;
+    }
+
+    $page = get_page_by_path('desal-calculator', OBJECT, 'page');
+    $page_id = $page instanceof WP_Post ? (int) $page->ID : 0;
+
+    if (!$page_id) {
+        $page_id = wp_insert_post([
+            'post_type' => 'page',
+            'post_status' => 'publish',
+            'post_title' => 'Arbok-Desal Calculator',
+            'post_name' => 'desal-calculator',
+            'post_content' => 'Configure source water, drinking-water demand and operating assumptions to estimate an ARBOK zero-liquid-discharge desalination system.',
+        ], true);
+    }
+
+    if (is_wp_error($page_id) || !$page_id) {
+        return;
+    }
+
+    update_post_meta((int) $page_id, '_wp_page_template', 'page-desal-calculator.php');
+    update_post_meta((int) $page_id, '_arbok_meta_description', 'Estimate ARBOK desalination output, recovered salt, energy demand and economics against conventional reverse osmosis.');
+    update_option('arbok_desal_calculator_page_ready_v1', (int) $page_id, false);
+}
+add_action('init', 'arbok_ensure_desal_calculator_page', 31);
 
 function arbok_contact_spam_fields(): void {
     $issued_at = time();
