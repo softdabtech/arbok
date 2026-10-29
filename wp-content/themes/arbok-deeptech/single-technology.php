@@ -2,7 +2,7 @@
 <section class="page-hero page-hero--compact technology-hero">
     <div class="shell"><?php arbok_breadcrumbs(); ?></div>
     <div class="shell technology-hero-grid">
-        <div><p class="eyebrow"><?php echo esc_html($sector); ?></p><h1><?php the_title(); ?></h1><p class="lede"><?php echo esc_html($summary); ?></p><div class="button-row"><a class="button" href="#technology-brief">Technology brief</a><a class="button button-ghost" href="<?php echo esc_url(home_url('/contact/?subject=technology&technology=' . rawurlencode(get_the_title()))); ?>">Discuss partnership</a></div></div>
+        <div><p class="eyebrow"><?php echo esc_html($sector); ?></p><h1><?php the_title(); ?></h1><p class="lede"><?php echo esc_html($summary); ?></p><div class="button-row"><a class="button" href="#technology-brief">Technology brief</a><a class="button button-ghost" href="<?php echo esc_url(home_url('/contact/#inquiry')); ?>" rel="nofollow" data-arbok-inquiry data-inquiry-subject="Technology partnership" data-technology="<?php echo esc_attr(get_the_title()); ?>">Discuss partnership</a></div></div>
         <div class="technology-hero-visual"><?php if (has_post_thumbnail()) : the_post_thumbnail('large', ['alt' => get_the_title()]); elseif ($technology_image) : ?><img src="<?php echo esc_url($technology_image); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"><?php else : arbok_technology_visual_fallback(get_the_ID(), 'hero'); endif; ?><aside class="data-panel">
             <div><span>Development stage</span><strong><?php echo esc_html(arbok_field('current_stage', false, 'To be confirmed')); ?></strong></div>
             <div><span>Readiness</span><strong><?php echo esc_html(arbok_field('technology_readiness_level', false, 'To be confirmed')); ?></strong></div>
@@ -16,7 +16,7 @@
         <aside class="sticky-aside">
             <img class="aside-logo" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="">
             <h2>At a glance</h2><dl><dt>Sector</dt><dd><?php echo esc_html($sector); ?></dd><dt>IP / patents</dt><dd><?php echo esc_html(arbok_field('ip_patent_status', false, 'Details available under technical diligence.')); ?></dd><dt>Commercial path</dt><dd>Licensing, pilot partnership or joint deployment</dd></dl>
-            <a class="button button-dark button-block" href="<?php echo esc_url(home_url('/contact/?subject=technical-discussion&technology=' . rawurlencode(get_the_title()))); ?>">Request technical discussion</a>
+            <a class="button button-dark button-block" href="<?php echo esc_url(home_url('/contact/#inquiry')); ?>" rel="nofollow" data-arbok-inquiry data-inquiry-subject="Technical inquiry" data-technology="<?php echo esc_attr(get_the_title()); ?>">Request technical discussion</a>
         </aside>
     </div>
 </section>
@@ -48,5 +48,5 @@ if ($images || $diagrams || $documents || $videos) : ?>
 <?php $related = new WP_Query(['post_type' => 'technology', 'posts_per_page' => 3, 'post__not_in' => [get_the_ID()], 'tax_query' => $terms && !is_wp_error($terms) ? [['taxonomy' => 'technology_sector', 'field' => 'term_id', 'terms' => wp_list_pluck($terms, 'term_id')]] : []]); if ($related->have_posts()) : ?>
 <section class="section section-soft"><div class="shell"><div class="section-heading"><div><p class="eyebrow dark">Related technologies</p><h2>Explore adjacent ARBOK systems</h2></div></div><div class="grid technology-grid"><?php while ($related->have_posts()) : $related->the_post(); arbok_technology_card(); endwhile; wp_reset_postdata(); ?></div></div></section>
 <?php endif; ?>
-<section class="section contact-cta"><div class="shell contact-cta__inner"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt=""><div><p class="eyebrow">Partnership pathway</p><h2>Evaluate <?php the_title(); ?> for your application or pilot site.</h2><div class="button-row"><a class="button" href="<?php echo esc_url(home_url('/contact/?subject=technology&technology=' . rawurlencode(get_the_title()))); ?>">Contact partnership team</a><a class="button button-ghost" href="<?php echo esc_url(home_url('/directions/')); ?>">Strategic directions</a></div></div></div></section>
+<section class="section contact-cta"><div class="shell contact-cta__inner"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt=""><div><p class="eyebrow">Partnership pathway</p><h2>Evaluate <?php the_title(); ?> for your application or pilot site.</h2><div class="button-row"><a class="button" href="<?php echo esc_url(home_url('/contact/#inquiry')); ?>" rel="nofollow" data-arbok-inquiry data-inquiry-subject="Technology partnership" data-technology="<?php echo esc_attr(get_the_title()); ?>">Contact partnership team</a><a class="button button-ghost" href="<?php echo esc_url(home_url('/directions/')); ?>">Strategic directions</a></div></div></div></section>
 <?php endwhile; get_footer(); ?>

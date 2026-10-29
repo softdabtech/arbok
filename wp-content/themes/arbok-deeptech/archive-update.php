@@ -64,7 +64,7 @@ $post_count = isset($published_posts->publish) ? (int) $published_posts->publish
                 <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="">
                 <h2>No blog posts published yet.</h2>
                 <p>New ARBOK articles and research notes will appear here after publication.</p>
-                <a class="button button-dark" href="<?php echo esc_url(home_url('/contact/?subject=media')); ?>">Media inquiry</a>
+                <a class="button button-dark" href="<?php echo esc_url(home_url('/contact/#inquiry')); ?>" rel="nofollow" data-arbok-inquiry data-inquiry-subject="Media / other">Media inquiry</a>
             </div>
         <?php endif; ?>
     </div>

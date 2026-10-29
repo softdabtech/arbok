@@ -4,6 +4,7 @@ $hero_image = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBA
 $hero_image = get_template_directory_uri() . '/assets/images/arbok-hero-building.jpeg';
 $ecosystem_image = arbok_media_url('EcoSystem_Tab', arbok_media_url('EcoSystem'));
 $features_image = arbok_media_url('ARBOK Tech Features 02');
+$total_technologies = (int) (wp_count_posts('technology')->publish ?? 0);
 ?>
 <section class="hero hero--media">
     <?php if ($hero_image) : ?><img class="hero-image" src="<?php echo esc_attr($hero_image); ?>" alt="" fetchpriority="high"><?php endif; ?>
@@ -21,7 +22,7 @@ $features_image = arbok_media_url('ARBOK Tech Features 02');
             </div>
         </div></div>
         <div class="hero-proof" aria-label="ARBOK technology performance highlights">
-            <div><strong>21</strong><span>technology platforms</span></div>
+            <div><strong><?php echo esc_html((string) $total_technologies); ?></strong><span>technology platforms</span></div>
             <div><strong>9</strong><span>detailed sectors</span></div>
             <div><strong>4</strong><span>strategic directions</span></div>
         </div>
@@ -76,7 +77,7 @@ $features_image = arbok_media_url('ARBOK Tech Features 02');
 
 <section class="section portfolio-feature">
     <div class="shell">
-        <div class="section-heading"><div><p class="eyebrow dark">Technology portfolio</p><h2>Engineering systems with measurable outputs</h2></div><a class="text-link" href="<?php echo esc_url(get_post_type_archive_link('technology')); ?>">View all 21 technologies <span>↗</span></a></div>
+        <div class="section-heading"><div><p class="eyebrow dark">Technology portfolio</p><h2>Engineering systems with measurable outputs</h2></div><a class="text-link" href="<?php echo esc_url(get_post_type_archive_link('technology')); ?>">View all <?php echo esc_html((string) $total_technologies); ?> technologies <span>↗</span></a></div>
         <div class="grid technology-grid technology-grid--featured">
             <?php $technologies = new WP_Query(['post_type' => 'technology', 'posts_per_page' => 6, 'post_name__in' => ['arbok-desalination','arbok-brine','arbok-purification','arbok-dynamix','arbok-air','arbok-teg'], 'orderby' => 'post_name__in']); while ($technologies->have_posts()) : $technologies->the_post(); arbok_technology_card(); endwhile; wp_reset_postdata(); ?>
         </div>

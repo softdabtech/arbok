@@ -19,8 +19,32 @@ function arbok_assets(): void {
     wp_enqueue_style('arbok-fonts', 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap', [], null);
     wp_enqueue_style('arbok-main', get_template_directory_uri() . '/assets/css/main.css', [], $version);
     wp_enqueue_script('arbok-main', get_template_directory_uri() . '/assets/js/main.js', [], $version, true);
+    wp_localize_script('arbok-main', 'arbokFrontend', [
+        'ajaxUrl' => admin_url('admin-ajax.php'),
+        'contactProofAction' => 'arbok_contact_proof',
+    ]);
 }
 add_action('wp_enqueue_scripts', 'arbok_assets');
+
+function arbok_resource_hints(array $urls, string $relation_type): array {
+    if ($relation_type === 'preconnect') {
+        $urls[] = ['href' => 'https://fonts.googleapis.com', 'crossorigin' => 'anonymous'];
+        $urls[] = ['href' => 'https://fonts.gstatic.com', 'crossorigin' => 'anonymous'];
+    }
+    return $urls;
+}
+add_filter('wp_resource_hints', 'arbok_resource_hints', 10, 2);
+
+function arbok_frontend_cleanup(): void {
+    if (is_admin()) {
+        return;
+    }
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('wp_head', 'wp_oembed_add_discovery_links');
+    remove_action('wp_head', 'wp_oembed_add_host_js');
+}
+add_action('init', 'arbok_frontend_cleanup');
 
 function arbok_document_meta(): void {
     if (function_exists('arbok_is_critical_metals_book') && arbok_is_critical_metals_book()) {
@@ -187,23 +211,6 @@ function arbok_document_meta(): void {
     echo '<script type="application/ld+json">' . wp_json_encode(['@context' => 'https://schema.org', '@graph' => $graph], JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
 }
 add_action('wp_head', 'arbok_document_meta', 3);
-
-function arbok_ga4_water_pages_fallback(): void {
-    if (!function_exists('arbok_is_water_solutions') || !arbok_is_water_solutions()) {
-        return;
-    }
-    ?>
-<!-- Google Analytics GA4 fallback for ARBOK virtual Water Solutions pages -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PXDVFCSFSF"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-PXDVFCSFSF');
-</script>
-<?php
-}
-add_action('wp_head', 'arbok_ga4_water_pages_fallback', 20);
 
 function arbok_security_headers(): void {
     if (headers_sent()) {
@@ -493,7 +500,7 @@ function arbok_technology_card(int $post_id = 0): void {
             <div class="card-kicker"><span><?php echo esc_html($sector); ?></span><i aria-hidden="true">•</i><span><?php echo esc_html($stage); ?></span></div>
             <h3><a href="<?php echo esc_url(get_permalink($post_id)); ?>"><?php echo esc_html(get_the_title($post_id)); ?></a></h3>
             <p><?php echo esc_html(arbok_clean_summary($summary_source, get_the_title($post_id), 25)); ?></p>
-            <div class="card-actions"><a class="text-link" href="<?php echo esc_url(get_permalink($post_id)); ?>">Explore technology <span>↗</span></a><a class="mini-cta" href="<?php echo esc_url(home_url('/contact/?subject=technology&technology=' . rawurlencode(get_the_title($post_id)))); ?>">Discuss</a></div>
+            <div class="card-actions"><a class="text-link" href="<?php echo esc_url(get_permalink($post_id)); ?>">Explore technology <span>↗</span></a><a class="mini-cta" href="<?php echo esc_url(home_url('/contact/#inquiry')); ?>" rel="nofollow" data-arbok-inquiry data-inquiry-subject="Technology partnership" data-technology="<?php echo esc_attr(get_the_title($post_id)); ?>">Discuss</a></div>
         </div>
     </article>
     <?php
@@ -729,13 +736,29 @@ function arbok_team_member_portrait(int $post_id = 0, string $size = 'medium_lar
     printf('<img src="%s" alt="" loading="lazy" decoding="async">', esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'));
 }
 
-function arbok_hide_legacy_team_member(): void {
-    if (is_singular('team_member') && get_post_field('post_name') === 'mohamed-zayed') {
-        wp_safe_redirect(get_post_type_archive_link('team_member'), 301);
+function arbok_legacy_public_redirects(): void {
+    if (is_admin() || wp_doing_ajax() || strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET')) !== 'GET') {
+        return;
+    }
+
+    $path = trim((string) wp_parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH), '/');
+    $redirects = [
+        'mohamed-zayed' => get_post_type_archive_link('team_member'),
+        'team/mohamed-zayed' => get_post_type_archive_link('team_member'),
+        'arbok-desalination' => trailingslashit(get_post_type_archive_link('technology')) . 'arbok-desalination/',
+    ];
+
+    if (isset($redirects[$path])) {
+        wp_safe_redirect($redirects[$path], 301, 'ARBOK canonical redirect');
+        exit;
+    }
+
+    if ($path === 'contact' && (!empty($_GET['technology']) || !empty($_GET['subject']))) {
+        wp_safe_redirect(home_url('/contact/#inquiry'), 302, 'ARBOK clean contact URL');
         exit;
     }
 }
-add_action('template_redirect', 'arbok_hide_legacy_team_member');
+add_action('template_redirect', 'arbok_legacy_public_redirects', 0);
 
 function arbok_team_archive_order(WP_Query $query): void {
     if (!is_admin() && $query->is_main_query() && $query->is_post_type_archive('team_member')) {
@@ -809,8 +832,79 @@ add_action('init', 'arbok_ensure_media_page', 30);
 function arbok_contact_spam_fields(): void {
     $issued_at = time();
     $token = wp_hash($issued_at . '|arbok_contact_form');
+    $challenge_a = random_int(2, 8);
+    $challenge_b = random_int(1, 9);
+    $challenge_token = wp_hash(implode('|', [$issued_at, $challenge_a, $challenge_b, $challenge_a + $challenge_b, 'arbok_contact_challenge']));
     echo '<input type="hidden" name="arbok_form_issued_at" value="' . esc_attr((string) $issued_at) . '">';
     echo '<input type="hidden" name="arbok_form_token" value="' . esc_attr($token) . '">';
+    echo '<input type="hidden" name="arbok_challenge_a" value="' . esc_attr((string) $challenge_a) . '">';
+    echo '<input type="hidden" name="arbok_challenge_b" value="' . esc_attr((string) $challenge_b) . '">';
+    echo '<input type="hidden" name="arbok_challenge_token" value="' . esc_attr($challenge_token) . '">';
+    echo '<input type="hidden" name="arbok_js_proof" value="">';
+    echo '<label class="full form-challenge"><span>Security check: ' . esc_html((string) $challenge_a) . ' + ' . esc_html((string) $challenge_b) . ' =</span><input type="number" name="arbok_challenge_answer" min="0" max="30" inputmode="numeric" autocomplete="off" required></label>';
+}
+
+function arbok_contact_client_ip(): string {
+    $candidates = [$_SERVER['HTTP_CF_CONNECTING_IP'] ?? '', $_SERVER['REMOTE_ADDR'] ?? ''];
+    foreach ($candidates as $candidate) {
+        $candidate = trim((string) $candidate);
+        if (filter_var($candidate, FILTER_VALIDATE_IP)) {
+            return $candidate;
+        }
+    }
+    return 'unknown';
+}
+
+function arbok_contact_client_signature(): string {
+    $agent = substr(sanitize_text_field(wp_unslash($_SERVER['HTTP_USER_AGENT'] ?? 'unknown')), 0, 255);
+    return hash_hmac('sha256', arbok_contact_client_ip() . '|' . $agent, wp_salt('auth'));
+}
+
+function arbok_contact_proof_handler(): void {
+    check_ajax_referer('arbok_contact', 'nonce');
+
+    $issued_at = absint($_POST['issued_at'] ?? 0);
+    $form_token = sanitize_text_field(wp_unslash($_POST['form_token'] ?? ''));
+    $age = time() - $issued_at;
+    if ($issued_at <= 0 || $age < 1 || $age > 3 * HOUR_IN_SECONDS || !hash_equals(wp_hash($issued_at . '|arbok_contact_form'), $form_token)) {
+        wp_send_json_error(['message' => 'Invalid form session.'], 403);
+    }
+
+    $rate_key = 'arbok_proof_rate_' . md5(arbok_contact_client_ip());
+    $proof_requests = (int) get_transient($rate_key);
+    if ($proof_requests >= 20) {
+        wp_send_json_error(['message' => 'Please try again later.'], 429);
+    }
+    set_transient($rate_key, $proof_requests + 1, HOUR_IN_SECONDS);
+
+    $proof = wp_generate_password(40, false, false);
+    set_transient('arbok_contact_proof_' . hash('sha256', $proof), [
+        'signature' => arbok_contact_client_signature(),
+        'form_token' => $form_token,
+    ], 20 * MINUTE_IN_SECONDS);
+
+    wp_send_json_success(['proof' => $proof]);
+}
+add_action('wp_ajax_nopriv_arbok_contact_proof', 'arbok_contact_proof_handler');
+add_action('wp_ajax_arbok_contact_proof', 'arbok_contact_proof_handler');
+
+function arbok_contact_akismet_is_spam(string $message, string $name, string $email): bool {
+    if (!class_exists('Akismet') || !method_exists('Akismet', 'http_post') || !get_option('wordpress_api_key')) {
+        return false;
+    }
+
+    $request = [
+        'blog' => home_url('/'),
+        'user_ip' => arbok_contact_client_ip(),
+        'user_agent' => sanitize_text_field(wp_unslash($_SERVER['HTTP_USER_AGENT'] ?? '')),
+        'referrer' => esc_url_raw(wp_get_referer() ?: ''),
+        'comment_type' => 'contact-form',
+        'comment_author' => $name,
+        'comment_author_email' => $email,
+        'comment_content' => $message,
+    ];
+    $response = Akismet::http_post(http_build_query($request, '', '&'), 'comment-check');
+    return is_array($response) && isset($response[1]) && trim((string) $response[1]) === 'true';
 }
 
 function arbok_contact_is_spam_submission(string $message, string $name, string $email): bool {
@@ -826,6 +920,27 @@ function arbok_contact_is_spam_submission(string $message, string $name, string 
         return true;
     }
 
+    $challenge_a = absint($_POST['arbok_challenge_a'] ?? 0);
+    $challenge_b = absint($_POST['arbok_challenge_b'] ?? 0);
+    $challenge_answer = absint($_POST['arbok_challenge_answer'] ?? -1);
+    $challenge_token = sanitize_text_field(wp_unslash($_POST['arbok_challenge_token'] ?? ''));
+    $expected_challenge_token = wp_hash(implode('|', [$issued_at, $challenge_a, $challenge_b, $challenge_a + $challenge_b, 'arbok_contact_challenge']));
+    if ($challenge_a < 1 || $challenge_b < 1 || $challenge_token === '' || !hash_equals($expected_challenge_token, $challenge_token) || $challenge_answer !== $challenge_a + $challenge_b) {
+        return true;
+    }
+
+    $proof = sanitize_text_field(wp_unslash($_POST['arbok_js_proof'] ?? ''));
+    $proof_key = 'arbok_contact_proof_' . hash('sha256', $proof);
+    $proof_data = $proof !== '' ? get_transient($proof_key) : false;
+    if ($proof !== '') {
+        delete_transient($proof_key);
+    }
+    if (!is_array($proof_data)
+        || !hash_equals((string) ($proof_data['signature'] ?? ''), arbok_contact_client_signature())
+        || !hash_equals((string) ($proof_data['form_token'] ?? ''), $token)) {
+        return true;
+    }
+
     if (preg_match_all('~https?://|www\\.|\\[url=|</a>|<a\\s~i', $message, $matches) > 1) {
         return true;
     }
@@ -834,6 +949,8 @@ function arbok_contact_is_spam_submission(string $message, string $name, string 
     $blocked_patterns = [
         'casino', 'crypto', 'viagra', 'cialis', 'loan', 'porn', 'escort', 'seo backlinks',
         'guest post', 'link building', 'whatsapp marketing', 'telegram channel', 'forex',
+        'domain authority', 'search engine optimization', 'sponsored article', 'buy followers',
+        'investment recovery', 'binary options', 'online betting', 'payday',
     ];
     foreach ($blocked_patterns as $pattern) {
         if (str_contains($content, $pattern)) {
@@ -841,18 +958,46 @@ function arbok_contact_is_spam_submission(string $message, string $name, string 
         }
     }
 
-    if (strlen($message) < 20 || preg_match('/(.)\\1{12,}/', $message)) {
+    $email_domain = strtolower((string) substr(strrchr($email, '@') ?: '', 1));
+    $disposable_domains = ['mailinator.com', 'guerrillamail.com', 'yopmail.com', 'tempmail.com', '10minutemail.com', 'trashmail.com'];
+    if (in_array($email_domain, $disposable_domains, true)) {
         return true;
     }
 
-    return false;
+    if (strlen($message) < 20 || strlen($message) > 6000 || preg_match('/(.)\\1{12,}/', $message)) {
+        return true;
+    }
+
+    return arbok_contact_akismet_is_spam($message, $name, $email);
+}
+
+function arbok_contact_redirect_url(): string {
+    $referer = wp_get_referer();
+    if ($referer && wp_parse_url($referer, PHP_URL_HOST) === wp_parse_url(home_url('/'), PHP_URL_HOST)) {
+        $path = '/' . trim((string) wp_parse_url($referer, PHP_URL_PATH), '/') . '/';
+        if ($path === '/europe-water-resilience/') {
+            return home_url('/europe-water-resilience/#europe-water-contact');
+        }
+    }
+    return home_url('/contact/#inquiry');
+}
+
+function arbok_contact_confirmation_is_valid(): bool {
+    $lead = sanitize_key(wp_unslash($_GET['lead'] ?? ''));
+    if ($lead === '') {
+        return false;
+    }
+    $key = 'arbok_contact_confirmation_' . $lead;
+    $valid = (bool) get_transient($key);
+    delete_transient($key);
+    return $valid;
 }
 
 function arbok_contact_form_handler(): void {
     if (!isset($_POST['arbok_contact_nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['arbok_contact_nonce'])), 'arbok_contact')) {
         wp_die('Invalid request.');
     }
-    $redirect = wp_get_referer() ?: home_url('/contact/');
+    $redirect = arbok_contact_redirect_url();
     if (!empty($_POST['website'])) {
         wp_safe_redirect(add_query_arg('contact', 'received', $redirect));
         exit;
@@ -866,6 +1011,7 @@ function arbok_contact_form_handler(): void {
     $subject = sanitize_text_field(wp_unslash($_POST['subject'] ?? 'General inquiry'));
     $message = sanitize_textarea_field(wp_unslash($_POST['message'] ?? ''));
     $context = sanitize_text_field(wp_unslash($_POST['inquiry_context'] ?? 'General inquiry'));
+    $technology = sanitize_text_field(wp_unslash($_POST['technology'] ?? ''));
     if ($name === '' || !is_email($email) || $message === '' || empty($_POST['consent'])) {
         wp_safe_redirect(add_query_arg('contact', 'error', $redirect));
         exit;
@@ -874,19 +1020,25 @@ function arbok_contact_form_handler(): void {
         wp_safe_redirect(add_query_arg('contact', 'received', $redirect));
         exit;
     }
-    $rate_key = 'arbok_inquiry_' . md5((string) ($_SERVER['REMOTE_ADDR'] ?? 'local'));
+    $rate_key = 'arbok_inquiry_' . md5(arbok_contact_client_signature());
     if (get_transient($rate_key)) {
-        wp_safe_redirect(add_query_arg('contact', 'error', $redirect));
+        wp_safe_redirect(add_query_arg('contact', 'received', $redirect));
         exit;
     }
     set_transient($rate_key, 1, 10 * MINUTE_IN_SECONDS);
-    $daily_key = 'arbok_inquiry_daily_' . md5((string) ($_SERVER['REMOTE_ADDR'] ?? 'local'));
+    $daily_key = 'arbok_inquiry_daily_' . md5(arbok_contact_client_signature());
     $daily_count = (int) get_transient($daily_key);
-    if ($daily_count >= 5) {
+    if ($daily_count >= 3) {
         wp_safe_redirect(add_query_arg('contact', 'received', $redirect));
         exit;
     }
     set_transient($daily_key, $daily_count + 1, DAY_IN_SECONDS);
+    $duplicate_key = 'arbok_inquiry_duplicate_' . md5(strtolower($email) . '|' . $message);
+    if (get_transient($duplicate_key)) {
+        wp_safe_redirect(add_query_arg('contact', 'received', $redirect));
+        exit;
+    }
+    set_transient($duplicate_key, 1, DAY_IN_SECONDS);
     $inquiry_id = wp_insert_post([
         'post_type' => 'arbok_inquiry',
         'post_status' => 'private',
@@ -902,11 +1054,14 @@ function arbok_contact_form_handler(): void {
         update_post_meta($inquiry_id, 'representing', $representing);
         update_post_meta($inquiry_id, 'subject', $subject);
         update_post_meta($inquiry_id, 'context', $context);
+        update_post_meta($inquiry_id, 'technology', $technology);
         update_post_meta($inquiry_id, 'submitted_at', current_time('mysql'));
     }
-    $mail_body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nOrganization: {$organization}\nCountry: {$country}\nRepresents: {$representing}\nContext: {$context}\n\n{$message}";
+    $mail_body = "Name: {$name}\nEmail: {$email}\nPhone: {$phone}\nOrganization: {$organization}\nCountry: {$country}\nRepresents: {$representing}\nContext: {$context}\nTechnology: {$technology}\n\n{$message}";
     wp_mail(get_option('admin_email'), '[ARBOK] ' . $subject, $mail_body, ['Reply-To: ' . $name . ' <' . $email . '>']);
-    wp_safe_redirect(add_query_arg('contact', 'received', $redirect));
+    $confirmation = strtolower(wp_generate_password(24, false, false));
+    set_transient('arbok_contact_confirmation_' . $confirmation, 1, 15 * MINUTE_IN_SECONDS);
+    wp_safe_redirect(add_query_arg(['contact' => 'received', 'lead' => $confirmation], $redirect));
     exit;
 }
 add_action('admin_post_nopriv_arbok_contact', 'arbok_contact_form_handler');
