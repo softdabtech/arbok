@@ -481,6 +481,14 @@ function arbok_technology_visual_fallback(int $post_id = 0, string $context = 'c
 
 function arbok_technology_card(int $post_id = 0): void {
     $post_id = $post_id ?: get_the_ID();
+    $modified = (string) get_post_modified_time('U', true, $post_id);
+    $cache_key = 'arbok_technology_card_v3_' . $post_id . '_' . $modified;
+    $cached_card = !is_user_logged_in() ? get_transient($cache_key) : false;
+    if (is_string($cached_card) && $cached_card !== '') {
+        echo $cached_card; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- cached theme markup is escaped before storage.
+        return;
+    }
+    ob_start();
     $card_slug = get_post_field('post_name', $post_id);
     $terms = get_the_terms($post_id, 'technology_sector');
     $sector = $terms && !is_wp_error($terms) ? $terms[0]->name : 'Multi-sector platform';
@@ -504,6 +512,11 @@ function arbok_technology_card(int $post_id = 0): void {
         </div>
     </article>
     <?php
+    $card_markup = (string) ob_get_clean();
+    if (!is_user_logged_in() && $card_markup !== '') {
+        set_transient($cache_key, $card_markup, 6 * HOUR_IN_SECONDS);
+    }
+    echo $card_markup; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- markup was escaped while rendering.
 }
 
 function arbok_excerpt(int $words = 28): string {

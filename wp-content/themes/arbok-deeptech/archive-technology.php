@@ -21,7 +21,7 @@ if ($sector) $tax_query[] = ['taxonomy' => 'technology_sector', 'field' => 'slug
 if ($stage) $tax_query[] = ['taxonomy' => 'readiness_stage', 'field' => 'slug', 'terms' => $stage];
 $portfolio = new WP_Query([
     'post_type' => 'technology',
-    'posts_per_page' => 24,
+    'posts_per_page' => 18,
     'paged' => $paged,
     's' => $search,
     'tax_query' => $tax_query,
