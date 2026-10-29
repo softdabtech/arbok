@@ -52,33 +52,33 @@ function arbok_frontend_cleanup(): void {
 }
 add_action('init', 'arbok_frontend_cleanup');
 
+function arbok_desal_calculator_seo_title(): string {
+    return 'ARBOK Desalination Calculator | ZLD System Estimate';
+}
+
+function arbok_desal_calculator_seo_description(): string {
+    return 'Estimate ARBOK zero-liquid-discharge desalination output, dry salt recovery, energy demand and operating economics compared with reverse osmosis.';
+}
+
 function arbok_document_meta(): void {
     if (function_exists('arbok_is_desal_calculator') && arbok_is_desal_calculator()) {
         remove_action('wp_head', 'rel_canonical');
-        $title = 'ARBOK Desalination Calculator | ZLD System Estimate';
-        $description = 'Estimate ARBOK zero-liquid-discharge desalination output, dry salt recovery, energy demand and operating economics compared with reverse osmosis.';
+        $title = arbok_desal_calculator_seo_title();
+        $description = arbok_desal_calculator_seo_description();
         $url = home_url('/desal-calculator/');
         $image = get_template_directory_uri() . '/assets/images/arbok-logo.png';
-        echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
-        echo '<meta name="robots" content="index,follow,max-image-preview:large">' . "\n";
-        echo '<link rel="canonical" href="' . esc_url($url) . '">' . "\n";
-        echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
-        echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
-        echo '<meta property="og:type" content="website">' . "\n";
-        echo '<meta property="og:url" content="' . esc_url($url) . '">' . "\n";
-        echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
-        echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
-        echo '<meta name="twitter:title" content="' . esc_attr($title) . '">' . "\n";
-        echo '<meta name="twitter:description" content="' . esc_attr($description) . '">' . "\n";
-        $schema = ['@context' => 'https://schema.org', '@graph' => [
-            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => $image, 'email' => 'info@arbok.tech'],
-            ['@type' => 'WebPage', '@id' => $url . '#webpage', 'url' => $url, 'name' => $title, 'description' => $description, 'inLanguage' => 'en', 'isPartOf' => ['@id' => home_url('/#website')], 'about' => ['@id' => $url . '#calculator'], 'publisher' => ['@id' => home_url('/#organization')]],
-            ['@type' => 'SoftwareApplication', '@id' => $url . '#calculator', 'name' => 'ARBOK Desalination Calculator', 'url' => $url, 'applicationCategory' => 'BusinessApplication', 'applicationSubCategory' => 'Desalination planning calculator', 'operatingSystem' => 'Web', 'isAccessibleForFree' => true, 'description' => $description, 'publisher' => ['@id' => home_url('/#organization')]],
-            ['@type' => 'BreadcrumbList', '@id' => $url . '#breadcrumb', 'itemListElement' => [
-                ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => home_url('/')],
-                ['@type' => 'ListItem', 'position' => 2, 'name' => 'Desalination Calculator', 'item' => $url],
-            ]],
-        ]];
+        if (!function_exists('aioseo')) {
+            echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
+            echo '<meta name="robots" content="index,follow,max-image-preview:large">' . "\n";
+            echo '<link rel="canonical" href="' . esc_url($url) . '">' . "\n";
+            echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
+            echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
+            echo '<meta property="og:type" content="website">' . "\n";
+            echo '<meta property="og:url" content="' . esc_url($url) . '">' . "\n";
+            echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
+            echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
+        }
+        $schema = ['@context' => 'https://schema.org', '@type' => 'SoftwareApplication', '@id' => $url . '#calculator', 'name' => 'ARBOK Desalination Calculator', 'url' => $url, 'applicationCategory' => 'BusinessApplication', 'applicationSubCategory' => 'Desalination planning calculator', 'operatingSystem' => 'Web', 'isAccessibleForFree' => true, 'inLanguage' => 'en', 'description' => $description, 'publisher' => ['@type' => 'Organization', 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => $image]];
         echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
         return;
     }
@@ -335,7 +335,7 @@ function arbok_is_desal_calculator(): bool {
 
 add_filter('pre_get_document_title', function ($title) {
     if (arbok_is_desal_calculator()) {
-        return 'ARBOK Desalination Calculator | ZLD System Estimate';
+        return arbok_desal_calculator_seo_title();
     }
     if (arbok_is_critical_metals_book()) {
         return 'Critical Metals: A New Strategic Approach | ARBOK';
@@ -356,6 +356,18 @@ add_filter('pre_get_document_title', function ($title) {
     }
     return $title;
 }, 30);
+
+add_filter('aioseo_title', function ($title) {
+    return arbok_is_desal_calculator() ? arbok_desal_calculator_seo_title() : $title;
+});
+
+add_filter('aioseo_description', function ($description) {
+    return arbok_is_desal_calculator() ? arbok_desal_calculator_seo_description() : $description;
+});
+
+add_filter('aioseo_canonical_url', function ($url) {
+    return arbok_is_desal_calculator() ? home_url('/desal-calculator/') : $url;
+});
 
 function arbok_render_desal_calculator(): void {
     if (!arbok_is_desal_calculator()) {
