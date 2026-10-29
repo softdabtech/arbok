@@ -471,11 +471,16 @@ add_filter('wp_get_attachment_image_attributes', 'arbok_image_attributes', 10, 2
 
 function arbok_logo(string $context = 'header'): void {
     printf(
-        '<span class="brand-logo brand-logo--%1$s"><img src="%2$s" alt="STRATEGIC RESEARCH INSTITUTE ARBOK"><span class="brand-wordmark"><strong>ARBOK</strong><small>Strategic Research Institute</small></span></span>',
+        '<span class="brand-logo brand-logo--%1$s"><img class="brand-logo__full" src="%2$s" width="791" height="193" alt="ARBOK"></span>',
         esc_attr($context),
-        esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png')
+        esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-full-black.png')
     );
 }
+
+function arbok_black_site_icon_url(string $url, int $size, int $blog_id): string {
+    return get_template_directory_uri() . '/assets/images/arbok-logo.png';
+}
+add_filter('get_site_icon_url', 'arbok_black_site_icon_url', 10, 3);
 
 function arbok_media_url(string $title, string $fallback = ''): string {
     $attachment = get_page_by_title($title, OBJECT, 'attachment');
