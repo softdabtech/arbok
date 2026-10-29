@@ -34,7 +34,7 @@ while (have_posts()) :
 
                 <?php if (!$has_images) : ?>
                     <div class="media-empty-state">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="" width="96" height="96">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp'); ?>" alt="" width="96" height="96">
                         <h2>ARBOK photography will be published here.</h2>
                         <p>The media library is ready for project, event, team and institutional images.</p>
                         <?php if (current_user_can('edit_post', get_the_ID())) : ?>

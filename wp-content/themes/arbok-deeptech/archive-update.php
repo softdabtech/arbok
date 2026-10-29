@@ -35,7 +35,7 @@ $post_count = isset($published_posts->publish) ? (int) $published_posts->publish
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail('large', ['alt' => get_the_title()]); ?>
                             <?php else : ?>
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="" loading="lazy">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp'); ?>" alt="" loading="lazy">
                             <?php endif; ?>
                         </a>
                         <div class="blog-card__body">
@@ -61,7 +61,7 @@ $post_count = isset($published_posts->publish) ? (int) $published_posts->publish
             <?php wp_reset_postdata(); ?>
         <?php else : ?>
             <div class="empty-state">
-                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt="">
+                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp'); ?>" alt="">
                 <h2>No blog posts published yet.</h2>
                 <p>New ARBOK articles and research notes will appear here after publication.</p>
                 <a class="button button-dark" href="<?php echo esc_url(home_url('/contact/#inquiry')); ?>" rel="nofollow" data-arbok-inquiry data-inquiry-subject="Media / other">Media inquiry</a>

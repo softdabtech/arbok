@@ -66,7 +66,7 @@ function arbok_document_meta(): void {
         $title = arbok_desal_calculator_seo_title();
         $description = arbok_desal_calculator_seo_description();
         $url = home_url('/desal-calculator/');
-        $image = get_template_directory_uri() . '/assets/images/arbok-logo.png';
+        $image = get_template_directory_uri() . '/assets/images/arbok-logo-black.webp';
         if (!function_exists('aioseo')) {
             echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
             echo '<meta name="robots" content="index,follow,max-image-preview:large">' . "\n";
@@ -94,7 +94,7 @@ function arbok_document_meta(): void {
         echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
         $schema = ['@context' => 'https://schema.org', '@graph' => [
-            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo.png', 'email' => 'info@arbok.tech'],
+            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo-black.webp', 'email' => 'info@arbok.tech'],
             ['@type' => 'Book', '@id' => home_url('/critical-metals-book/#book'), 'name' => 'Critical Metals: A New Strategic Approach', 'author' => ['@type' => 'Person', 'name' => 'Michael Vischmidt'], 'publisher' => ['@id' => home_url('/#organization')], 'bookFormat' => 'https://schema.org/EBook', 'inLanguage' => 'en', 'url' => home_url('/critical-metals-book/'), 'image' => $image, 'description' => $description, 'sameAs' => 'https://www.amazon.com/dp/B0HJ5S55Q8'],
             ['@type' => 'WebPage', '@id' => home_url('/critical-metals-book/#webpage'), 'url' => home_url('/critical-metals-book/'), 'name' => 'Critical Metals: A New Strategic Approach', 'description' => $description, 'publisher' => ['@id' => home_url('/#organization')]],
         ]];
@@ -109,7 +109,7 @@ function arbok_document_meta(): void {
         echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
         echo '<meta property="og:type" content="article">' . "\n";
         echo '<meta property="og:url" content="' . esc_url(home_url('/terms-of-use/')) . '">' . "\n";
-        echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png') . '">' . "\n";
+        echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp') . '">' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
         return;
     }
@@ -124,7 +124,7 @@ function arbok_document_meta(): void {
         echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/density-doctrine-hero.jpg') . '">' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
         $schema = ['@context' => 'https://schema.org', '@graph' => [
-            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo.png', 'email' => 'info@arbok.tech'],
+            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo-black.webp', 'email' => 'info@arbok.tech'],
             ['@type' => 'Article', '@id' => home_url('/density-doctrine/#article'), 'headline' => 'The Density Doctrine', 'description' => $description, 'url' => home_url('/density-doctrine/'), 'image' => get_template_directory_uri() . '/assets/images/density-doctrine-hero.jpg', 'publisher' => ['@id' => home_url('/#organization')]],
         ]];
         echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
@@ -138,12 +138,12 @@ function arbok_document_meta(): void {
         echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
         echo '<meta property="og:type" content="website">' . "\n";
         echo '<meta property="og:url" content="' . esc_url(home_url('/europe-water-resilience/')) . '">' . "\n";
-        echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png') . '">' . "\n";
+        echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp') . '">' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
         $schema = [
             '@context' => 'https://schema.org',
             '@graph' => [
-                ['@type'=>'Organization','@id'=>home_url('/#organization'),'name'=>'STRATEGIC RESEARCH INSTITUTE ARBOK','url'=>home_url('/'),'logo'=>get_template_directory_uri() . '/assets/images/arbok-logo.png','email'=>'info@arbok.tech'],
+                ['@type'=>'Organization','@id'=>home_url('/#organization'),'name'=>'STRATEGIC RESEARCH INSTITUTE ARBOK','url'=>home_url('/'),'logo'=>get_template_directory_uri() . '/assets/images/arbok-logo-black.webp','email'=>'info@arbok.tech'],
                 ['@type'=>'WebPage','@id'=>home_url('/europe-water-resilience/#webpage'),'url'=>home_url('/europe-water-resilience/'),'name'=>'Europe Water Resilience Solutions','description'=>$description,'publisher'=>['@id'=>home_url('/#organization')]],
                 ['@type'=>'FAQPage','mainEntity'=>[
                     ['@type'=>'Question','name'=>'How can Europe address water scarcity?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Europe can combine demand management, infrastructure modernization, water reuse, desalination, industrial recovery and regional resilience planning.']],
@@ -171,10 +171,10 @@ function arbok_document_meta(): void {
         echo '<meta property="og:description" content="' . esc_attr($description) . '">' . "\n";
         echo '<meta property="og:type" content="article">' . "\n";
         echo '<meta property="og:url" content="' . esc_url(home_url($canonical_path)) . '">' . "\n";
-        echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png') . '">' . "\n";
+        echo '<meta property="og:image" content="' . esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp') . '">' . "\n";
         echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
         $schema = ['@context' => 'https://schema.org', '@graph' => [
-            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo.png', 'email' => 'info@arbok.tech'],
+            ['@type' => 'Organization', '@id' => home_url('/#organization'), 'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK', 'url' => home_url('/'), 'logo' => get_template_directory_uri() . '/assets/images/arbok-logo-black.webp', 'email' => 'info@arbok.tech'],
             ['@type' => 'TechArticle', '@id' => home_url($canonical_path . '#article'), 'headline' => $title, 'description' => $description, 'url' => home_url($canonical_path), 'publisher' => ['@id' => home_url('/#organization')], 'about' => ['@type' => 'Thing', 'name' => 'Zero-Liquid Discharge water technology']],
         ]];
         echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
@@ -206,7 +206,7 @@ function arbok_document_meta(): void {
     if (is_singular('team_member')) {
         $image = arbok_team_member_portrait_url(get_queried_object_id(), 'large');
     } else {
-        $image = is_singular() && has_post_thumbnail() ? get_the_post_thumbnail_url(null, 'large') : get_template_directory_uri() . '/assets/images/arbok-logo.png';
+        $image = is_singular() && has_post_thumbnail() ? get_the_post_thumbnail_url(null, 'large') : get_template_directory_uri() . '/assets/images/arbok-logo-black.webp';
     }
     echo '<meta property="og:image" content="' . esc_url($image) . '">' . "\n";
     echo '<meta name="twitter:card" content="summary_large_image">' . "\n";
@@ -218,7 +218,7 @@ function arbok_document_meta(): void {
         '@id' => home_url('/#organization'),
         'name' => 'STRATEGIC RESEARCH INSTITUTE ARBOK',
         'url' => home_url('/'),
-        'logo' => get_template_directory_uri() . '/assets/images/arbok-logo.png',
+        'logo' => get_template_directory_uri() . '/assets/images/arbok-logo-black.webp',
         'email' => 'info@arbok.tech',
         'telephone' => '+1-929-235-1625',
         'description' => 'Zero Waste Discharge technology portfolio for water, waste, energy, climate and material systems.',
@@ -473,12 +473,12 @@ function arbok_logo(string $context = 'header'): void {
     printf(
         '<span class="brand-logo brand-logo--%1$s"><img class="brand-logo__full" src="%2$s" width="791" height="193" alt="ARBOK"></span>',
         esc_attr($context),
-        esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-full-black.png')
+        esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-full-black.webp')
     );
 }
 
 function arbok_black_site_icon_url(string $url, int $size, int $blog_id): string {
-    return get_template_directory_uri() . '/assets/images/arbok-logo.png';
+    return get_template_directory_uri() . '/assets/images/arbok-logo-black.webp';
 }
 add_filter('get_site_icon_url', 'arbok_black_site_icon_url', 10, 3);
 
@@ -798,7 +798,7 @@ function arbok_team_member_portrait_url(int $post_id = 0, string $size = 'large'
         return (string) get_the_post_thumbnail_url($post_id, $size);
     }
 
-    return get_template_directory_uri() . '/assets/images/arbok-logo.png';
+    return get_template_directory_uri() . '/assets/images/arbok-logo-black.webp';
 }
 
 function arbok_team_member_portrait(int $post_id = 0, string $size = 'medium_large', bool $eager = false): void {
@@ -826,7 +826,7 @@ function arbok_team_member_portrait(int $post_id = 0, string $size = 'medium_lar
         return;
     }
 
-    printf('<img src="%s" alt="" loading="lazy" decoding="async">', esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'));
+    printf('<img src="%s" alt="" loading="lazy" decoding="async">', esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp'));
 }
 
 function arbok_legacy_public_redirects(): void {

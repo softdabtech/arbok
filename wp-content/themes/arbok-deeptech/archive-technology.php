@@ -52,6 +52,6 @@ $pagination = paginate_links([
     'next_text' => 'Next →',
 ]);
 if ($pagination) : ?><nav class="pagination-wrap" aria-label="Technology pagination"><?php echo wp_kses_post(str_replace('page-numbers', 'pagination page-numbers', $pagination)); ?></nav><?php endif; ?>
-<?php else : ?><div class="empty-state"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo.png'); ?>" alt=""><h2>No technologies match these filters.</h2><p>Reset the filters or contact ARBOK to discuss an application outside the current portfolio.</p><a class="button button-dark" href="<?php echo esc_url(get_post_type_archive_link('technology')); ?>">View all technologies</a></div><?php endif; ?>
+<?php else : ?><div class="empty-state"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/arbok-logo-black.webp'); ?>" alt=""><h2>No technologies match these filters.</h2><p>Reset the filters or contact ARBOK to discuss an application outside the current portfolio.</p><a class="button button-dark" href="<?php echo esc_url(get_post_type_archive_link('technology')); ?>">View all technologies</a></div><?php endif; ?>
 </div></section>
 <?php get_footer(); ?>
